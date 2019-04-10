@@ -1,419 +1,102 @@
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+body{
+    background-color: #F6E3FF;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+.navbar{
+    background-color: #56304E;
 }
-body {
-	line-height: 1;
-    width: auto;
-}
-a{
-    text-decoration: none; 
-    color: aliceblue;
-}
-a:hover {
-    color: aqua;
+.navbar-brand{
+    color: #BB77A1;
+    font-family: "Avenir-Bold";
     transition: 0.8s;
 }
-ol, ul {
-	list-style: none;
-    line-height: 25px;
+.navbar-brand:hover{
+    color: rgb(238, 146, 203);
+    transition: 0.8s;
 }
-blockquote, q {
-	quotes: none;
+.nav-link{
+    color: #BB77A1;
+    font-family: "Avenir-Regular";
+    transition: 0.8s;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-	display: block;
+.nav-link:hover{
+    color: rgb(238, 146, 203);
+    transition: 0.8s;
 }
 
-
-/* Header
------------------------------------------------------------------------------*/
-#menu li {
-	display:inline-block;
-	margin: 5px;
-	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px;
-            border-radius: 10px;
+#Home{
+    background-color: #56304E;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.5); /* Параметры тени */
 }
-#menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
+#Home .row{
+   margin: 100px;
 }
-#menu li a{
-	text-decoration:none;
-	color: #000;
+#Home h3{
+    color : #E2E2E2;
+    font-family: "NoteWorthy";
 }
-#menu li.active a:hover{
-	color: #000;
+#Home blockquote{
+    color : #E2E2E2;
+    font-family: "NoteWorthy";
 }
-#menu li:hover{
-	background: rgba(255,255,255, 0.8);
+#Home footer{
+    color : #E2E2E2;
+    opacity: 0.66;
+    font-family: "NoteWorthy";
 }
-#menu li a,
-#menu li.active a{
-	padding: 9px 18px;
-	display:block;
-}
-#menu li.active a{
-	color: #fff;
-}
-#menu{
-	position:fixed;
-	top:0;
-	left:0;
-	height: 40px;
-	z-index: 70;
-	width: 100%;
-	padding: 0;
-	margin: 20px;
-    margin-left: 25px;
+#Home img{
+    max-height: 300px;
 }
 
-/* Middle 1st page
------------------------------------------------------------------------------*/
-.content {
-    width: 100%;
+#Menu{
+    margin-top: 40px; 
 }
-.first_page{
-    background-image: url("../img/bg.png");
-    background-size: cover;
-    padding: 10px;
-    height: 100%;
+#MenuHeader{
+    max-width: 180px;
 }
-table.phones  {
-    width:  100%; 
-    border-spacing: 5px;
-   }
-   table.phones td {
-    vertical-align: top;
-    width: 40%;
-   }
-   
-.wrap {
-    font-family: 'Playfair Display SC', serif;
-    opacity: 0.8;
-    position: relative;
-    margin: 0 5px 30px 5px;
-    text-align: center;    
-    background: #222222;
-    padding: 30px 40px;
-    border: 1px solid rgba(0,0,0,.1);
-    font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 23px;
-    border-radius: 20px;
-    color: aliceblue;
-    margin-left: auto;
-    margin-right: auto;
+#MenuItems{
+    margin-top: 30px; 
 }
-.wrap_rounded {
-    opacity: 0.8;
-    position: relative;
-    text-align: center;
+#MenuItem{
+    background-color: #56304E;
+    height: 200px;
     width: 200px;
-    height: 100px;
-    background: #222222;
-    padding: 25px 25px;
-    border: 1px solid rgba(0,0,0,.1);
-    border-radius: 20px;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.wraps {
-    display: block;
-}
-
-.phone{
-    margin: 0;
-    display: flex;
-    opacity:0.7;
-    transition: 1s;
-}
-.phone p{
-    font-family: 'Playfair Display SC', serif;
-    font-size: 16px;
-}
-.phone:hover {
-    opacity:1;
-    transition: 1s;
-}
-
-#wrap_hover:hover p{
-    display:block;
-}
-#wrap_hover:hover {
-    height: 360px;
-    transition: 0.5s;
-}
-#wrap_hover p{
-    display:none;
-}
-
-body {
-	margin:0;
-}
-
-.flip_effect_vertical {
-	position: relative;
- 	transition:1s;
-	transform-style: preserve-3d;
-	
-
-}
-
-.flip_effect_vertical:hover {
-    transform: rotateX(180deg);
-	}
-	
-.flip_effect_vertical .front {
-	position: absolute; 
-  	width: 100%; 
-	height: 100%; 
-	backface-visibility: hidden;
-    opacity: 0.8;
-}
-
-.flip_effect_vertical .back {
-	/* общие стили */
-    margin-top: 20px; 
-	position: relative;
-  	width: 100%; 
-	height: 100%; 
-	backface-visibility: hidden; 
-	transform: rotateX(180deg); 
-    opacity: 0.8;
-}
-#dev{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-}
-
-#wrap_button{
-    height: 50px;  
-    margin-top: 10px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    display: block;
-    position: relative;
-}
-
-#wrap_button:hover{
-    background-color: #88d2f7;
-    color: black;
-    transition: 1s;
-    height: 60px;
-}
-
-#wrap_button:hover img{
-    display:block;
-}
-
-#wrap_button img{
-    display:none;
-    margin: 0 auto; 
+    margin: 5px; 
 }
 
 
-/* iPhone and Android page
------------------------------------------------------------------------------*/
-.iphone_page{
-    height: 100%;
-    background-image: url(../img/bg_iphone.jpg)
-}
+@media (min-width: 930px) { /* это будет показано при разрешении монитора до 930 пикселей */
+    #Home .row{
+        margin: auto;
+        max-width: 95%;
+    }
+  }
+  
+  @media (max-width: 930px) and (min-width: 470px) {  /* для разрешения экрана от 470 до 930 пикселей */
+    #Home .row{
+        margin: auto;
+        max-width: 100%;
+    }
+    #Home img{
+       max-height: 200px;
+    }
+    html {
+        font-size: 0.9rem;
+      }
+  }
+  
+  @font-face {
+    font-family: "NoteWorthy"; 
+    src: url("../fonts/Noteworthy.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+    @font-face {
+        font-family: "Avenir-Bold"; 
+        src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf") format("truetype"); 
+        } 
 
-.head {
-    padding: 50px 20px;
-    text-align: center;
-    opacity: 0.8;
-} 
-.head h1 {
-    font-family: 'Merriweather', serif;
-    position: relative;
-    color: #FCF2E5;
-    background: #222222;
-    font-size: 2.5em;
-    font-weight: normal;
-    padding: 10px 40px;
-    display: inline-block;
-    margin: 0;
-    line-height: 1;
-    border-radius: 10px;
-
-}
-.head h1:before {
-    content: ""; 
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    bottom: -15px;
-    background: #222222;
-}
-.head h1:after {
-    content: ""; 
-    position: absolute;
-    height: 0;
-    width: 80%;
-    border-top: 10px solid #222222;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -25px;
-}
-
-
-.inline{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.swift_icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 350px;
-}
-
-.swift_icon img{
-    margin-left: 20px;
-}
-
-table.phone_dev  {
-    font-size: 17px;
-    color: #FCF2E5;
-    font-family: 'Merriweather', serif;
-    margin-top: -40px; 
-    width:  100%; /* Ширина таблицы */
-    border-spacing: 20px; /* Расстояние между ячейками */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-   }
-   table.phone_dev td {
-    vertical-align: top;
-    margin-left: auto;
-    margin-right: auto;
-   }
-
-.sendToEmail {
-    margin-top: 35px; 
-    background-color: azure;
-    opacity: 0.7;
-    color: black;
-    border-radius: 15px;
-    padding: 15px;
-}
-.sendToEmail input{
-     display: inline-block;
-    width: 15em;
-    height: 3em;
-    text-align: center;
-    line-height: 2em;
-    vertical-align: middle;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    color: rgb(0,0,0);
-    outline: none;
-    border: 1px solid rgba(0,0,0,.4);
-    border-top-color: rgba(0,0,0,.3);
-    border-radius: 2px;
-    background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
-    box-shadow:
-        0 0 3px rgba(0,0,0,0) inset,
-        0 1px 1px 1px rgba(255,255,255,.2),
-        0 -1px 1px 1px rgba(0,0,0,0);
-    transition: .2s ease-in-out;
-    border-radius: 10px;
-}
-.sendToEmail button{
-    margin-top: 15px;
-    font-size: 14px;
-    display: inline-block;
-    width: 10em;
-    height: 2.5em;
-    text-align: center;
-    line-height: 2em;
-    vertical-align: middle;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    color: rgb(0,0,0);
-    outline: none;
-    border: 1px solid rgba(0,0,0,.4);
-    border-top-color: rgba(0,0,0,.3);
-    border-radius: 2px;
-    background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
-    box-shadow:
-        0 0 3px rgba(0,0,0,0) inset,
-        0 1px 1px 1px rgba(255,255,255,.2),
-        0 -1px 1px 1px rgba(0,0,0,0);
-    transition: .2s ease-in-out;
-    border-radius: 10px;
-}
-.sendToEmail button:hover:not(:active) {
-    box-shadow:
-        0 0 3px rgba(0,0,0,0) inset,
-        0 1px 1px 1px rgba(0,255,255,.5),
-        0 -1px 1px 1px rgba(0,255,255,.5);
-}   
-.sendToEmail button:active {
-    background: linear-gradient(rgb(250,250,250), rgb(235,235,235));
-    box-shadow:
-        0 0 3px rgba(0,0,0,.5) inset,
-        0 1px 1px 1px rgba(255,255,255,.4),
-        0 -1px 1px 1px rgba(0,0,0,.1);
-}
-.android_page{
-    height: 100%;
-    background-image: url(../img/android_bg.jpg);
-    background-size: cover; 
-}
-/* Footer
------------------------------------------------------------------------------*/
-.footer {
-}
+        @font-face {
+            font-family: "Avenir-Regular"; 
+            src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype"); 
+            } 

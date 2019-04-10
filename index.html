@@ -1,186 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8"/>
-	<title></title>
-	<link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link href="css/fullpage.css" type="text/css" rel="stylesheet">
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/viewportchecker.js"></script>
-    <script src="js/js.js"></script>
-    <script src="js/easings.min.js"></script>
-    <script src="js/fullpage.js"></script>
-    <script src="js/scrolloverflow.min.js"></script>
-    <script src="js/js.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-    <ul class="animated fadeInDown" id="menu">
-    <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-    <li data-menuanchor="iphone"><a href="#iphone">iPhone</a></li>
-    <li data-menuanchor="android"><a href="#android">Android</a></li>
-</ul>
 
-<div id="fullpage">
-	<main class="content">
-        
-        <div class="section" id="section0">
-        <div id="first_page" class="first_page">
-        <div class="animated fadeInUp">
-            <div class="wrap"><h2><p>Добро пожаловать на наш сайт!</p><br><p>Мы поможем Вам познакомиться поближе с темой мобильной разработки.</p></h2>
-            </div>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">OCTO COFFEE</a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Меню</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Как добраться?</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+            </ul>
         </div>
-        <table class="phones">
-            <td class="leftcol">
-        <div class="animated slideInLeft">
-            <div class="phone" style="margin: 0 100px 0 auto">
-                <div class="hover" style="margin: 0 0 0 0;">
-                <div id="wrap_hover" class="wrap_rounded" style="display: block;">
-                    <img src="img/logo_apple.png" height="90px"><br><br>
-                    <p class="animated fadeInUp">iOS (до 24 июня 2010 года — iPhone OS) — мобильная операционная система для смартфонов, электронных планшетов, носимых проигрывателей и некоторых других устройств, разрабатываемая и выпускаемая американской компанией Apple.</p></div> 
-                    <div class="flip_effect_vertical">
-                        <div class="front">
-                        <div id="dev" class="wrap_rounded" style="opacity: 1;">  
-                        <p class="animated fadeInUp">Что нужно знать о разработке приложений для iOS.</p>
-                        </div>
-                    </div>
-                        <div class="back">
-                        <div id="dev" class="wrap_rounded" style=" opacity: 1;"> 
-                        <p class="animated fadeInUp">Для того, чтобы начать разработку под iOS Вам необходимо изучить язык программирования Swift.</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div id="wrap_button" class="wrap_rounded" style="margin-top: 20px;">
-                    <p>Изучить разработку под iOS.</p><br>
-                    <a href="#iphone"><img class="animated fadeInUp" src="img/arrow.png" height="30px"></a> 
-                   </div> 
-                </div>
-                   
-                <img src="img/iphone.png" style="margin-left: 50px;" height="450px" width="220px">
-            </div>
-        </div>
-            </td>
-            <td>
-        <div class="animated slideInRight" >
-            <div class="phone" style="margin: 0 0 0 100px">
-                <img src="img/android.png" height="450px" width="220px" style="margin-right: 50px; ">
-                <div class="hover" style="margin: 0 auto 0 0;">
-                <div id="wrap_hover" class="wrap_rounded" style="display: block;"> 
-                    <img src="img/logo_android.png" height="90px"><br><br>
-                    <p class="animated fadeInUp">Android — операционная система для смартфонов, планшетов и других цифровых устройств. Основана на ядре Linux и собственной реализации виртуальной машины Java от Google. Изначально разрабатывалась компанией Android, Inc., которую затем купила Google.</p></div>
-                    
-                    <div class="flip_effect_vertical">
-                        <div class="front">
-                        <div id="dev" class="wrap_rounded" style="opacity: 1;">  
-                        <p class="animated fadeInUp">Что нужно знать о разработке приложений для Android.</p>
-                        </div>
-                    </div>
-                        <div class="back">
-                        <div id="dev" class="wrap_rounded" style="opacity: 1;">  
-                            <p>Первый и важнейший шаг в разработке под  Android  - это изучение Java и XML.</p>
-                        </div>
-                    </div>
-                    </div>
-                   <div id="wrap_button" class="wrap_rounded" style="margin-top: 20px;">
-                    <p>Изучить разработку под Android.</p><br>
-                   <a href="#android"><img class="animated fadeInUp" src="img/arrow.png" height="30px"></a> 
-                   </div> 
-                </div>
-            </div>
-        </div>
-            </td>
-        </table>
-        </div>
-</div>
-<div class="section" id="section1">
-			 <div id="iphone_page" class="iphone_page">
-            <div class="head"><h1>Разработка под iOS</h1></div>
-            <table class="phone_dev">
-            <tr>
-                <td align="center"><br>
-                    <div class="wrap_rounded" style="width: 550px; height: 100px; display: flex;"><p>Основным инструментом программирования под ОС iOS является язык Swift и Objective-C. Конечно, есть и кроссплатформенные решения, такие как реализация ПО на языке Java-Script или C#, но сегодня мы поговорим про программирование с помощью языка, который был создан самой компанией Apple для своих же устройств. Именно им и является Swift.</p><img src="img/swift.png" height="100px" style="margin-left: 30px;"></div></td>
-                <td rowspan="3"><div class="wrap_rounded" style="height: 445px; width: 200px; margin-top: 16px; display: block;"> <p>Полезные ссылки:</p><br>
-                    <ul>
-                    <li><a href="https://www.apple.com/ru/mac/">Купить мак :)</a></li>
-                    <li><a href="https://developer.apple.com/xcode/">Изучить и скачать Xcode</a></li>
-                    <li><a href="https://www.apple.com/ru/swift">Изучить Swift</a></li>
-                    <li><a href="https://geekbrains.ru/professions/ios_developer?utm_source=google&utm_medium=cpc&utm_campaign=google_s_spb_programmist_ios_main_lp_ios_developer&utm_term=%2B%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%2Bios&utm_content=cid:944913065|gid:47172711095|aid:248277679195|pos:1t1|st:g|src:|dvc:c|reg:9047073&gclid=EAIaIQobChMI-qT_04-B3wIV1EkYCh1N5QYjEAAYASAAEgKYh_D_BwE">Курсы от GeekBrains</a></li>
-                    <li><a href="https://habr.com/post/166213/">Список полезных книг</a></li>
-                    </ul>
-                    <div class="sendToEmail"><form method="POST" action="php/mailFileIOS.php">
-            <p>Введите свой email и мы отправим вам бесплатно книгу "Программирование для iOS 7. Основы Objective-C, Xcode и Cocoa".</p><br>
-            <input type="email" name="email"  placeholder="E-mail">
-            
-            <button name="go"  type="submit" value="go">Отправить</button>
-        </form></div></div></td>
-            </tr>   
-            <tr>
-                <td ><div class="wrap_rounded" style="width: 550px; height: 100px;  display: flex;"><p style="margin-right: -40px;">Для разработки на языке программирования Swift Вам понадобится компьютер с установленной ОС OSX. Но само мобильное устройство не необходимо, так как Вы можете проверять работоcпсобность своих приложений на эмуляторе мобильных устройств.</p><img src="img/macbook.png" height="110px" style="margin-left: 30px; margin-right: -20px; "></div></td>
-                <td></td>
-            </tr>
-            
-            <tr>
-                <td><div class="wrap_rounded" style="width: 550px; height: 100px; display: flex;"><p>И заключающим шагом, чтобы наконец присутпить к разработке мобильных приложений для платформы iOS, является наличие среды разработки Xcode. Именно в нем мы и будем писать, запускать и проверять наши приложения.</p><img src="img/xcode.png" height="100px"></div></td>
-                <td></td>
-            </tr>
-        </table>
-        </div>
-		</div>
+    </nav>
 
-        
-<div class="section" id="section2">  
-        
-			 <div id="android_page" class="android_page">
-            <div class="head"><h1>Разработка под Android</h1></div>
-            <table class="phone_dev">
-            <tr>
-                <td align="center"><br>
-                    <div class="wrap_rounded" style="width: 550px; height: 100px; display: flex;"><p>Разработчики под ОС Android больше всего предпочитают язык программирования Java в связке с языком разметки XML для разработки приложений. В отличие от iOS Android является открытой системой, что делает ее более гибкой для разработки и создает большее пространство для фантазии.</p><img src="img/java.png" height="100px" style="margin-left: 30px;"></div></td>
-                <td rowspan="3"><div class="wrap_rounded" style="height: 445px; width: 200px; margin-top: 16px; display: block;"> <p>Полезные ссылки:</p><br>
-                    <ul>
-                    <li><a href="https://java.com/ru/download/">Скачать JAVA</a></li>
-                    <li><a href="https://developer.android.com/studio/">Android Studio</a></li>
-                    <li><a href="https://developer.android.com/docs/">Изучить Android Studio</a></li>
-                    <li><a href="https://habr.com/post/335332/">Cтатья на habr.com</a></li>
-                    <li><a href="https://proglib.io/p/android-development-materials/">Список полезных книг</a></li>
-                    </ul>
-                    <div class="sendToEmail"><form method="POST" action="php/mailFileANDROID.php">
-            <p>Введите свой email и мы отправим вам бесплатно книгу П. Дейтела, Х. Дейтела, А. Уолда "Android для разработчиков. 3-е издание".</p><br>
-            <input type="email" name="email"  placeholder="E-mail">
-            
-            <button name="go"  type="submit" value="go">Получить</button>
-        </form></div></div></td>
-            </tr>   
-            <tr>
-                <td ><div class="wrap_rounded" style="width: 550px; height: 100px;  display: flex;"><p style="margin-right: -40px;">Для разработки на языке программирования Java для Android Вам понадобится компьютер с необходимыми инструментами: JDK — набор для разработки на языке Java и 
-                Android SDK and AVD Manager — набор утилит для разработки + эмулятор. </p><img src="img/sdk.png" height="110px" style="margin-left: 60px;"></div></td>
-                <td></td>
-            </tr>
-            
-            <tr>
-                <td><div class="wrap_rounded" style="width: 550px; height: 100px; display: flex;"><p>Осталось лиш выбрать среду разработки. IDE для наших целей большое множество: Eclipse,
-                IntelliJ IDEA Community Edition,
-                Netbeans и Android Studio. Многие разработчики предпочитают именно Android Studio, так как эта IDE была разработана компанией Google специально для Android разработки.</p><img src="img/studio.png" height="100px"></div></td>
-                <td></td>
-            </tr>
-        </table>
-        
+    <div class="container-fluid" id="Home">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="text-center">
+                    <h3>Крепкий и насыщенный кофе с терпковатым-ореховым вкусом. На втором глотке бархатный хорошо
+                        сбалансированный вкус с легкой кислинкой. Идеально сбалансированное тело. Во вкусе черный
+                        шоколад и жареные орехи. На послевкусии сладкая черешня.
+                    </h3>
+                </p>
+                <blockquote class="blockquote">
+                    Ради кофе можно пойти на все. Даже на работу.
+                    <footer class="blockquote-footer">Билл Гейтс</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <img class=" float-right img-fluid" src="img/logo.png" />
+            </div>
+        </div>
     </div>
-</div>       
-</main>
-</div>
-    <script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        menu: '#menu',
-        anchors: ['home', 'iphone', 'android'],
-        autoScrolling: false,
-       
-    });
-        fullpage_api.setAllowScrolling(false); document.getElementById('demosMenu').addEventListener('change', function(e){
-        var dropdown = document.getElementById('demosMenu');
-        window.location.href = dropdown.options[dropdown.selectedIndex].getAttribute('id') + '.html';
-     });
-</script>
+
+    <div class="container-fluid" id="Menu">
+        <div class="text-center">
+            <img id="MenuHeader" src="img/MenuHeader.png" />
+        </div>
+        <div class="container-fluid" id="MenuItems">
+            <div class="row">
+                <div class="container col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6">
+                    <div class="container rounded mx-auto" id="MenuItem">
+
+                    </div>
+                </div>
+                <div class="container col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6">
+                    <div class="container rounded mx-auto" id="MenuItem">
+
+                    </div>
+                </div>
+                <div class="container col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6">
+                    <div class="container rounded-lg mx-auto" id="MenuItem">
+
+                    </div>
+                </div>
+                <div class="container col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6">
+                    <div class="container rounded mx-auto" id="MenuItem">
+
+                    </div>
+                </div>
+                <div class="container col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6">
+                    <div class="container rounded mx-auto" id="MenuItem">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
 </body>
+
 </html>
