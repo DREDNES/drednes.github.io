@@ -1,102 +1,149 @@
-
-body{
+body {
     background-color: #F6E3FF;
 }
-.navbar{
+
+.navbar {
     background-color: #56304E;
 }
-.navbar-brand{
+.navbar .active{
+    color: green;
+}
+.navbar-brand {
     color: #BB77A1;
     font-family: "Avenir-Bold";
     transition: 0.8s;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     color: rgb(238, 146, 203);
     transition: 0.8s;
 }
-.nav-link{
+
+.nav-link {
     color: #BB77A1;
     font-family: "Avenir-Regular";
     transition: 0.8s;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: rgb(238, 146, 203);
     transition: 0.8s;
 }
 
-#Home{
+#Home {
     background-color: #56304E;
-    box-shadow: 0 5px 3px rgba(0,0,0,0.5); /* Параметры тени */
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.5);
+    /* Параметры тени */
 }
-#Home .row{
-   margin: 100px;
-}
-#Home h3{
-    color : #E2E2E2;
+
+#Home h3 {
+    color: #E2E2E2;
     font-family: "NoteWorthy";
 }
-#Home blockquote{
-    color : #E2E2E2;
+
+#Home blockquote {
+    color: #E2E2E2;
     font-family: "NoteWorthy";
 }
-#Home footer{
-    color : #E2E2E2;
+
+#Home footer {
+    color: #E2E2E2;
     opacity: 0.66;
     font-family: "NoteWorthy";
 }
-#Home img{
+
+#Home img {
     max-height: 300px;
 }
 
-#Menu{
-    margin-top: 40px; 
+#Menu {
+    margin-top: 40px;
 }
-#MenuHeader{
+
+#MenuHeader {
     max-width: 180px;
 }
-#MenuItems{
-    margin-top: 30px; 
-}
-#MenuItem{
-    background-color: #56304E;
-    height: 200px;
-    width: 200px;
-    margin: 5px; 
-}
 
 
-@media (min-width: 930px) { /* это будет показано при разрешении монитора до 930 пикселей */
-    #Home .row{
-        margin: auto;
+
+@media (min-width: 1024px) {
+
+    /* это будет показано при разрешении монитора до 930 пикселей */
+    #Home .row {
         max-width: 95%;
     }
-  }
-  
-  @media (max-width: 930px) and (min-width: 470px) {  /* для разрешения экрана от 470 до 930 пикселей */
-    #Home .row{
-        margin: auto;
+
+    #MenuItems_small {
+        display: none;
+    }
+
+    #MenuItems_medium {
+        display: none;
+    }
+
+    #MenuItems_large {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 720px) {
+
+    /* для разрешения экрана от 470 до 930 пикселей */
+    #Home .row {
         max-width: 100%;
     }
-    #Home img{
-       max-height: 200px;
+
+    #Home img {
+        max-height: 200px;
+    }
+
+    #MenuItems_small {
+        display: none;
+    }
+
+    #MenuItems_medium {
+        display: block;
+    }
+
+    #MenuItems_large {
+        display: none;
     }
     html {
         font-size: 0.9rem;
-      }
-  }
-  
-  @font-face {
-    font-family: "NoteWorthy"; 
-    src: url("../fonts/Noteworthy.otf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-    } 
-    @font-face {
-        font-family: "Avenir-Bold"; 
-        src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf") format("truetype"); 
-        } 
+    }
+}
+@media (max-width: 720px) {
+    #Home .row {
+        max-width: 100%;
+    }
+    #MenuItems_small {
+        display: block;
+    }
 
-        @font-face {
-            font-family: "Avenir-Regular"; 
-            src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype"); 
-            } 
+    #MenuItems_medium {
+        display: none;
+    }
+
+    #MenuItems_large {
+        display: none;
+    }
+}
+
+
+
+@font-face {
+    font-family: "NoteWorthy";
+    src: url("../fonts/Noteworthy.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Avenir-Bold";
+    src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Avenir-Regular";
+    src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
+}
