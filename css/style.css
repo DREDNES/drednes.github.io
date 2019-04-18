@@ -5,9 +5,11 @@ body {
 .navbar {
     background-color: #56304E;
 }
-.navbar .active{
+
+.navbar .active {
     color: green;
 }
+
 .navbar-brand {
     color: #BB77A1;
     font-family: "Avenir-Bold";
@@ -64,9 +66,49 @@ body {
     max-width: 180px;
 }
 
+#Contacts {
+    background-color: #56304E;
+    box-shadow: 0 -5px 3px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+    padding: 30px;
+}
 
+#Contacts_content {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-@media (min-width: 1024px) {
+#Contacts_content h4,
+h5 {
+    color: #E2E2E2;
+    font-size: 90%;
+}
+
+#Contacts h1 {
+    color: #E2E2E2;
+    font-family: "Avenir-Regular";
+}
+
+@media (min-width: 1280px) {
+    #MenuItems_small {
+        display: none;
+    }
+
+    #MenuItems_medium {
+        display: none;
+    }
+
+    #MenuItems_large {
+        display: block;
+    }
+
+    #Contacts .row {
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
 
     /* это будет показано при разрешении монитора до 930 пикселей */
     #Home .row {
@@ -108,14 +150,19 @@ body {
     #MenuItems_large {
         display: none;
     }
+    #Address{
+        margin-top: 10px;
+    }
     html {
         font-size: 0.9rem;
     }
 }
+
 @media (max-width: 720px) {
     #Home .row {
         max-width: 100%;
     }
+
     #MenuItems_small {
         display: block;
     }
@@ -126,6 +173,9 @@ body {
 
     #MenuItems_large {
         display: none;
+    }
+    #Address{
+        margin-top: 10px;
     }
 }
 
