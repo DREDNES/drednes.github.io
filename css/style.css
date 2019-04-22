@@ -79,15 +79,17 @@ body {
     margin-right: auto;
 }
 
-#Contacts_content h4,
-h5 {
+#Contacts_content h4{
     color: #E2E2E2;
-    font-size: 90%;
+    font-size: 80%;
 }
 
 #Contacts h1 {
     color: #E2E2E2;
     font-family: "Avenir-Regular";
+}
+#Contacts img {
+    max-width: 150px;
 }
 
 @media (min-width: 1280px) {
@@ -104,8 +106,10 @@ h5 {
     }
 
     #Contacts .row {
-        max-width: 70%;
+        max-width: 80%;
     }
+
+
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
