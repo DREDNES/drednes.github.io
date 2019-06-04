@@ -90,3 +90,22 @@
     });  
 
 })(jQuery);
+
+$(document).ready(function(){
+  $('#callback-submit').click(function(){
+      var form_name   = $('#form_name').val();
+      var form_phone   = $('#form_phone').val();
+      $.ajax({
+          url: "php/call.php", 
+          type: "post", 
+          dataType: "json", 
+          data: { 
+              "form_name":   form_name,
+              "form_phone":   form_phone
+          },
+          success: function(data){
+              $('.messages').html(data.result); 
+          }
+      });
+  });
+});

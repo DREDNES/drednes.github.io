@@ -18,7 +18,7 @@
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/styles.css">
-
+     
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -183,20 +183,19 @@
                               </figure>
                          </div>
                     </div>
-
-                    <div class="col-md-offset-1 col-md-4 col-sm-12">
+                        <div class="col-md-offset-1 col-md-4 col-sm-12">
                          <div class="entry-form">
-                              <form action="php/call.php" method="post">
-                                   <h2>Остались вопросы? <br><small>Мы Вам перезвоним!</small></h2>
-                                   <input type="text" name="name" class="form-control" placeholder="Имя" required="">
+                              <form action="" id="CallBackForm" name="CallBackForm" method="post">
+                                   <h2>Остались вопросы? <br><small><div id="CallBackResult">Мы Вам перезвоним!</div></small></h2>
+                                   <input type="text" id="name" name="name" class="form-control" placeholder="Имя" required="">
 
-                                   <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required="">
+                                   <input type="tel" id="telephone" name="telephone" class="form-control" placeholder="Номер телефона" required="">
 
-                                   <button type="submit" class="submit-btn form-control" id="form-submit">Перезвоните мне</button>
+                                   <button type="submit" class="submit-btn form-control" id="form-submit" onclick="AjaxFormRequest('CallBackResult', 'CallBackForm', 'php/call.php')">Перезвоните мне</button>
                               </form>
                          </div>
                     </div>
-
+                
                </div>
           </div>
      </section>
@@ -1595,9 +1594,9 @@
                <div class="row">
 
                     <div class="col-md-12 col-sm-12">
-                         <form id="contact-form" role="form" action="php/order.php" method="post">
+                         <form id="contact-form" name="contact-form" role="form" action="" method="post">
                               <div class="section-title">
-                                   <h2>Оставьте заявку <small>Здесь вы можете оформить заказ или задать интересующие Вас вопросы </small></h2>
+                                   <h2>Оставьте заявку<small><div id="OrderResult">Здесь вы можете оформить заказ или задать интересующие Вас вопросы</div> </small></h2>
                               </div>
 
                               <div class="col-md-12 col-sm-12">
@@ -1609,7 +1608,7 @@
                               </div>
 
                               <div class="col-md-4 col-sm-12">
-                                   <input type="submit" class="form-control" name="send message" value="Отправить">
+                                   <button type="submit" class="submit-btn form-control" id="form-submit" onclick="AjaxFormRequest('OrderResult', 'contact-form', 'php/order.php')">Отправить</button>
                               </div>
 
                          </form>
@@ -1672,9 +1671,30 @@
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
      <script>
-         
-     
-        </script>
+
+    function AjaxFormRequest(result_id,formMain,url) {
+                jQuery.ajax({
+                    url:     url,
+                    type:     "POST",
+                    dataType: "html",
+                    data: jQuery("#"+formMain).serialize(), 
+                    success: function(response) {
+                    document.getElementById(result_id).innerHTML = response;
+                },
+                error: function(response) {
+                document.getElementById(result_id).innerHTML = "<p>Возникла ошибка при отправке формы. Попробуйте еще раз</p>";
+                }
+             });
+
+             $(':input',"#"+formMain)
+ 				.not(':button, :submit, :reset, :hidden')
+ 				.val('')
+ 				.removeAttr('checked')
+ 				.removeAttr('selected');
+    }
+</script>
+
+    
 
 </body>
 </html>
