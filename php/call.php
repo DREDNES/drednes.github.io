@@ -10,10 +10,10 @@ $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $result = mail($to, $subject, $message, $headers);
 
     if ($result){ 
-        echo "<p>Спасибо ".$_POST['name'].", cкоро мы Вам перезвоним!</p>";
+        echo "<p style='color:red;font-size:1em;'>Спасибо ".$_POST['name'].", cкоро мы Вам перезвоним!</p>";
     }
     else{
-        echo "<p>Cообщение не отправленно. Пожалуйста, попрбуйте еще раз</p>";
+        echo "<p style='color:red;font-size:1em;'>Cообщение не отправленно. Пожалуйста, попрбуйте еще раз</p>";
     }
 }
 else {

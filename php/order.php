@@ -11,10 +11,10 @@ if(!empty($_POST['email'] ))
     $result = mail($to, $tema, $message, $headers);
 
     if ($result){ 
-        echo "<p>Спасибо ".$_POST['name'].", cкоро мы Вам ответим!</p>";
+        echo "<p style='color:red;font-size:1em;'>Спасибо ".$_POST['name'].", cкоро мы Вам ответим!</p>";
     }
     else{
-        echo "<p>Cообщение не отправленно. Пожалуйста, попрбуйте еще раз</p>";
+        echo "<p style='color:red;font-size:1em;'>Cообщение не отправленно. Пожалуйста, попрбуйте еще раз</p>";
     }
 }
 else {
