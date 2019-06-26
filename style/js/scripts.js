@@ -1,10 +1,6 @@
 $(document).ready(function () {
 "use strict";
 	/*-----------------------------------------------------------------------------------*/
-	/*	VIDEO
-	/*-----------------------------------------------------------------------------------*/
-    $('.player').fitVids();
-	/*-----------------------------------------------------------------------------------*/
 	/*	REVOLUTION
 	/*-----------------------------------------------------------------------------------*/
     $('.fullscreenbanner').revolution(
@@ -445,40 +441,4 @@ $( function() {
 $container.imagesLoaded( function() {
   $container.isotope('layout');
 });
-});
-/*-----------------------------------------------------------------------------------*/
-/*	INSTAGRAM
-/*-----------------------------------------------------------------------------------*/
-var instagramFeed = new Instafeed({
-    get: 'user',
-    userId: 1215763826,
-    accessToken: '1215763826.f1627ea.dad6ca96bd7642519b573d52c3ef467f',
-    resolution: 'low_resolution',
-    template: '<div class="item"><figure class="frame"><img src="{{image}}" /><a href="{{link}}" class="ins-link" target="_blank"><i class="icon-link"></i></a></figure></div>',
-    after: function () {
-        $('.swiper-container.instagram').each(function(){
-			  $(this).swiper({
-			     grabCursor: true,
-			    slidesPerView: 'auto',
-			    wrapperClass: 'swiper',
-			    slideClass: 'item',
-			    offsetPxBefore: 0,
-			     offsetPxAfter: 0
-			  });
-			
-			  var $swipers = $(this);
-			
-			  $swipers.siblings('.arrow-left').click(function(){
-			$swipers.data('swiper').swipeTo($swipers.data('swiper').activeIndex-1);
-			return false;
-			});
-			$swipers.siblings('.arrow-right').click(function(){
-			$swipers.data('swiper').swipeTo($swipers.data('swiper').activeIndex+1);
-			return false;
-			});
-		});
-    }
-});
-$('#instafeed').each(function() {
-    instagramFeed.run();
 });
