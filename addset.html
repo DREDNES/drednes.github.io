@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="style/images/favicon.png">
+  <title>Lumos</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css">
+  <link href="style/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style/css/plugins.css" rel="stylesheet">
+  <link href="style/css/prettify.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="style/css/color/pink.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,700,600,500,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+  <link href="style/type/fontello.css" rel="stylesheet">
+  <link href="style/type/budicons.css" rel="stylesheet">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+    .main {
+      max-width: 1000px;
+      padding: 2% 0 0;
+      margin: auto;
+    }
+
+    .form {
+      position: relative;
+      z-index: 1;
+      background: #FFFFFF;
+      max-width: 1000px;
+      margin: 0 auto 20px;
+      padding: 45px;
+      text-align: center;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+
+    .form input,
+    textarea, select{
+      font-family: "Roboto", sans-serif;
+      outline: 0;
+      background: #f2f2f2;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    .form .button {
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      outline: 0;
+      background: #4CAF50;
+      width: 100%;
+      border: 0;
+      padding: 15px;
+      color: #FFFFFF;
+      font-size: 14px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+    }
+
+    .form .button:hover,
+    .form button:active,
+    .form button:focus {
+      background: #43A047;
+    }
+
+
+    body {
+      background: #76b852;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+      background: -moz-linear-gradient(right, #76b852, #8DC26F);
+      background: -o-linear-gradient(right, #76b852, #8DC26F);
+      background: linear-gradient(to left, #76b852, #8DC26F);
+      font-family: "Roboto", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="form">
+<h3>Инструкция по использованию</h3>
+<ol style="text-align: left">
+    <li>На хостинге перейти в папку /style/images/sets и создать новую папку (латинскими символами) для нового фотосета</li>
+    <li>Переименовать все фотографии с фотосета в порядковые номера (1.jpg, 2.jpg, 3.jpg...)</li>
+    <li>Загрузить фотографии в созданную папку</li>
+    <li>На этой странице заполнить все поля и нажать сгенерировать код</li>
+    <li>Загруженный файл переместить в папку /ajax на хостинге</li>
+    <li>Выведенный фрагмент кода скопировать и вставить в файл index.html под комментарием ВСТАВИТЬ ФРАГМЕНТ КОДА СЮДА</li>
+    <li>Перейти к последней фотографии в файле index.html, вырезать фрагемт кода от &ltli&gt до &lt/li&gt и вставить его в файл ajax/port-more.html под комментарием ВСТАВИТЬ ФРАГМЕНТ КОДА СЮДА</li>
+    <li>Найти строку &lt/div&gt с комментарием и перенести ее на 11 строчек выше (вставить после &lt/li&gt) </li>
+    <li>Если в последнем блоке &ltdiv&gt стало больше 8ми фотографий - создать новый &ltdiv&gt и перенести лишнюю фотографию в него (вставить между &ltdiv&gt и &lt/div&gt)</li>
+  </ol>
+    </div>
+  </div>
+  <div class="main">
+    <div class="form">
+      <input type="text" id="name" placeholder="Как называется фотосет?" />
+      <input type="text" id="cover"
+        placeholder="Какую фотографию выбрать обложкой для главной страницы? (порядковый номер)" />
+      <input type="text" id="folder" placeholder="Как названа папка, куда загружены фотографии?" />
+      <input type="number" id="count" min="1" placeholder="Сколько фотографий в фотосете?" />
+      <textarea name="comment" rows="5" cols="45" id="comment" placeholder="Описание фотосета"></textarea></p>
+      <select id="type">
+        <option value="family">Семейная</option>
+        <option value="portait">Потрет</option>
+        <option value="wedding">Свадьба</option>
+        <option value="children">Дети</option>
+      </select>
+      <input class="button" type="submit" onclick="generate();" value="Сгенерировать код" />
+      <div id="message"></div>
+    </div>
+  </div>
+  <script>
+    var saveData = (function () {
+      var a = document.createElement("a");
+      document.body.appendChild(a);
+      a.style = "display: none";
+      return function (data, fileName) {
+        var blob = new Blob([data], {
+            type: "octet/stream"
+          }),
+          url = window.URL.createObjectURL(blob);
+        a.href = url;
+        a.download = fileName;
+        a.click();
+        window.URL.revokeObjectURL(url);
+      };
+    }());
+
+    var message = document.getElementById("message");
+
+    function generate() {
+      var name = document.getElementById("name");
+      var folder = document.getElementById("folder");
+      var count = document.getElementById("count");
+      var comment = document.getElementById("comment");
+      var select = document.getElementById("type");
+      var coverImg = document.getElementById("cover");
+      var cover = '<li class="cbp-item frame ' + select.value + '"> <a class="cbp-caption cbp-singlePage" href="ajax/' +
+        folder.value + '.html">\n<div class="cbp-caption-defaultWrap"> <img src="style/images/sets/' + folder.value +
+        '/' + coverImg.value +
+        '.jpg" alt=""> </div>\n<div class="cbp-caption-activeWrap">\n<div class="cbp-l-caption-alignCenter">\n<div class="cbp-l-caption-body">\n<div class="cbp-l-caption-title">' +
+        name.value + '</div>\n</div>\n</div>\n</div>\n</a>\n</li>';
+
+      var mess =
+        '<div class="swiper-wrapper"> <a class="arrow-left" href="#"></a> <a class="arrow-right" href="#"></a>\n<div class="swiper-container gallery">\n<div class="swiper">\n\n\n';
+      for (var i = 0; i < count.value; i++) {
+        mess = mess + '<div class="item">\n<figure class="frame"><img src="style/images/sets/' + folder.value + '/' + (
+          i + 1) + '.jpg" alt="" /></figure>\n</div>\n\n';
+      }
+      mess = mess +
+        '\n</div>\n<!-- /.swiper -->\n</div>\n<!-- /.swiper-container -->\n</div>\n<!-- /.swiper-wrapper -->\n<div class="container inner">\n<div class="box">\n<h1 class="post-title">Project Details</h1>\n<p>' +
+        comment.value +
+        '</p>\n<!-- /.box -->\n</div>\n<!-- /.container -->\n<!-- INSERT PAGE SCRIPTS HERE -->\n<script type="text/javascript">\n$(\'.swiper-container.gallery\').each(function(){\n $(this).swiper({\ngrabCursor: true,\nslidesPerView: \'auto\',\nwrapperClass: \'swiper\',\nslideClass: \'item\',\n offsetPxBefore: 0,\n offsetPxAfter: 0\n});\nvar $swipers = $(this);\n$swipers.siblings(\'.arrow-left\').click(function(){\n$swipers.data(\'swiper\').swipeTo($swipers.data(\'swiper\').activeIndex-1);\nreturn false;\n	});\n$swipers.siblings(\'.arrow-right\').click(function(){\n$swipers.data(\'swiper\').swipeTo($swipers.data(\'swiper\').activeIndex+1);\nreturn false;\n});\n	})<\/script>';
+      message.innerHTML = '<plaintext>' + cover;
+      fileName = folder.value + '.html';
+      saveData(mess, fileName);
+    }
+  </script>
+</body>
+
+</html>
