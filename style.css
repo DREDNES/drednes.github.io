@@ -126,7 +126,7 @@ body {
 /*	01. GENERAL
 /*-----------------------------------------------------------------------------------*/
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     overflow-x: hidden;
     background: #fefefe;
     color: #414141;
@@ -152,7 +152,7 @@ input,
 button,
 select,
 textarea {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 15px;
     font-weight: normal;
 }
@@ -180,7 +180,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     margin-top: 0;
     color: #4d4d4d;
     margin-bottom: 10px;
@@ -395,7 +395,7 @@ blockquote:before {
 
 blockquote small {
     display: block;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 12px;
     line-height: 26px;
     font-style: normal;
