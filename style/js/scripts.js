@@ -1,3 +1,21 @@
+(function ($) {
+
+    "use strict";
+  
+      // SMOOTHSCROLL
+      $(function() {
+        $('.navbar a, #home a').on('click', function(event) {
+          var $anchor = $(this);
+            $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top - 49
+            }, 1000);
+              event.preventDefault();
+        });
+      });  
+  
+  })(jQuery);
+
+  
 $(document).ready(function () {
 "use strict";
 	/*-----------------------------------------------------------------------------------*/
