@@ -26,18 +26,16 @@
       <a href="#">Контакты</a>
     </div>
   </div>
-  
+
   <nav id="nav" class="mb-1 navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="#">app<i style="font-size: 70%" class="icon-spin4 animate-spin"></i>xius</a>
-    <button class="navbar-toggler menu-wrapper" onclick="openCloseNav()" type="button">
+    <button class="navbar-toggler menu-wrapper" type="button">
       <div class="hamburger-menu"></div>
-        </button>
+    </button>
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ml-auto nav-flex-icons">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Главная
-            <span class="sr-only">(current)</span>
-          </a>
+          <a class="nav-link" href="#">Главная</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Услуги</a>
@@ -109,24 +107,28 @@
         </ul>
       </div>
       <div class="col-xl-4 col-md-6 col-sm-12 d-flex align-items-center row right">
-        <div id="tel_num" class="col-3">
-          <div class="hover-contact-icon"><i class="mx-auto main-footer-icons icon-phone"></i><span>+7 (999)
-              246-85-15</span></div>
-        </div>
         <div class="col-3">
-          <div class="hover-contact-icon h-100 align-items-center">
-            <a href="#" class="main-footer-icons icon-paper-plane mx-auto"></a>
+          <div class="hover-contact-icon">
+            <i class="main-footer-icons icon-phone" onclick="collapseContactOpen('icon-phone')"></i>
           </div>
         </div>
         <div class="col-3">
           <div class="hover-contact-icon">
-            <a href="#" class="main-footer-icons icon-whatsapp"></a>
+            <i class="main-footer-icons icon-paper-plane" onclick="collapseContactOpen('icon-paper-plane')"></i>
           </div>
         </div>
         <div class="col-3">
           <div class="hover-contact-icon">
-            <a href="#" class="main-footer-icons icon-vkontakte"></a>
+            <i class="main-footer-icons icon-whatsapp" onclick="collapseContactOpen('icon-whatsapp')"></i>
           </div>
+        </div>
+        <div class="col-3">
+          <div class="hover-contact-icon">
+            <i class="main-footer-icons icon-vkontakte" onclick="collapseContactOpen('icon-vkontakte')"></i>
+          </div>
+        </div>
+        <div id="collapsed-contact-wrap" class="col-12">
+          <div id="contact" class="collapsed-contact row d-flex align-items-center"></div>
         </div>
       </div>
     </div>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+
 html {
     min-height: 100%;
     background-size: cover;
@@ -12,9 +14,10 @@ body {
 
 /*--------NAVBAR--------*/
 /*--------MOBILE-NAV--------*/
-#mobileNav{
+#mobileNav {
     width: 0%;
 }
+
 .overlay {
     height: 100%;
     width: 0;
@@ -22,38 +25,34 @@ body {
     z-index: 1;
     right: 0;
     top: 0;
-    background-color: rgba(57,73,101, 0.95); 
+    background-color: rgba(57, 73, 101, 0.95);
+    background: linear-gradient(to bottom left, #05445c, #5c4f74);
     overflow-x: hidden;
     transition: 0.5s;
-  }
-  
-  .overlay-content {
+}
+
+.overlay-content {
     position: relative;
-    top: 25%; 
-    width: 100%; 
+    top: 25%;
+    width: 100%;
     text-align: center;
-    margin-top: 30px; 
-  }
-  
-  .overlay a {
+    margin-top: 30px;
+}
+
+.overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 2em;
     color: #ABCDEF;
-    display: block; 
+    display: block;
     transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
+}
+
+.overlay a:hover,
+.overlay a:focus {
     color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
+}
+
 /*--------MOBILE-NAV--------*/
 
 /*--------HAMBURGER--------*/
@@ -61,88 +60,111 @@ body {
     background-color: transparent;
     z-index: 2;
     border: none;
-    height: 30px;;
+    height: 30px;
+    ;
 }
+
 .hamburger-menu,
 .hamburger-menu:after,
 .hamburger-menu:before {
-  width: 30px;
-  height: 3px;
+    width: 30px;
+    height: 3px;
 }
+
 .hamburger-menu {
-	position: relative;
-	background: rgba(255, 255, 255, 1);
-	transition: all 0ms 300ms;
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    transition: all 0ms 300ms;
 }
+
 .animate {
-    background: rgba(255, 255, 255, 0); 
-  }
+    background: rgba(255, 255, 255, 0);
+}
+
 .hamburger-menu:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 10px;
-	background: rgba(255, 255, 255, 1);
-	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background: rgba(255, 255, 255, 1);
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hamburger-menu:after {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 10px;
-	background: rgba(255, 255, 255, 1);
-	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: rgba(255, 255, 255, 1);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hamburger-menu.animate:after {
-	top: 0;
-	transform: rotate(45deg);
-	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    ;
 }
 
 .hamburger-menu.animate:before {
-	bottom: 0;
-	transform: rotate(-45deg);
-	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    ;
 }
+
 /*--------HAMBURGER--------*/
 
 #nav {
     padding: 30px 100px;
 }
 
-.navbar-brand{
-    font-size: 3em;
-    margin-top: -7px; 
+.navbar-brand {
+    font-size: 2.5em;
+    margin-top: -7px;
+    font-family: "Share Tech Mono", monospace;
 }
 
 .nav-link {
-    font-size: 1.5em;
-    margin: auto 10px;
-    position: relative;
-    color: #ABCDEF;
-    cursor: pointer;
-    line-height: 1;
+    display: block;
+    margin: auto;
+    padding: 1rem 1.9rem;
+    font-size: 1.4rem;
+    margin: 0 10px;
     text-decoration: none;
+    color: white;
+    position: relative;
+    -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    z-index: 1;
 }
 
 .nav-link:after {
+    content: '';
     display: block;
-    position: absolute;
-    left: 0;
-    width: 0;
     height: 2px;
-    margin-top: 10px;
-    background-color: #ABCDEF;
-    content: "";
-    transition: width 0.3s ease-out;
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+    left: 1.25rem;
+    background-color: rgba(171, 205, 239, 0.5);
+    -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+    z-index: -1;
 }
 
-.nav-link:hover:after,
-.nav-link:focus:after {
-    width: 100%;
+.nav-link:hover {
+    color: #2D2D2D;
 }
+
+.nav-link:hover:after {
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+
 /*--------NAVBAR--------*/
 
 /*--------MAINPAGE--------*/
@@ -156,13 +178,13 @@ body {
     margin: 0 auto;
 }
 
-.text-center h1{
+.text-center h1 {
     margin: 30px 20px;
     color: #ABCDEF;
     font-size: 2.3em;
 }
 
-.text-center h2{
+.text-center h2 {
     margin: 30px 20px;
     color: #ABCDEF;
     font-size: 2em;
@@ -193,13 +215,15 @@ body {
     margin: auto 0;
     font-size: 1.5em;
 }
-.header-icons{
+
+.header-icons {
     font-size: 3.5em;
 }
+
 /*--------/HOME-BLOCKS--------*/
 
 /*--------FEAURES&CONTACTS--------*/
-.main-footer{
+.main-footer {
     padding-bottom: 30px;
 }
 
@@ -233,7 +257,7 @@ body {
 
 .hover-contact-icon {
     transition: 0.2s;
-    font-size: 2em;
+    display: block;
 }
 
 .hover-contact-icon:hover {
@@ -242,8 +266,48 @@ body {
     transition: 0.2s;
 }
 
-.hover-contact-icon a {
+#collapsed-contact-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: 0.5s;
+
+}
+
+#collapsed-contact-wrap .main-footer-icons {
+    font-size: 2.5em;
+}
+
+#collapsed-contact-wrap .icon-cancel {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#collapsed-contact-wrap .icon-cancel:hover {
+    background-color: #f5493d;
+    border-radius: 0.3em;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.collapsed-contact {
+    background-color: rgba(171, 205, 239, 0.5);
+    border-radius: 15px;
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#contact a {
     text-decoration: none;
+    color: #323232;
+    transition: 0.5s;
+}
+
+#contact a:hover {
+    color: #ABCDEF;
+    transition: 0.5s;
 }
 
 .main-footer-icons {
@@ -252,41 +316,101 @@ body {
     font-size: 1.2em;
 }
 
-#tel_num {
-    z-index: 1;
-    transition: 0.2s;
-}
-
-#tel_num span {
-    color: #4b4949;
-    display: none;
-    transition: 0.5s;
-    margin: auto 0;
-}
-
-/* #tel_num:hover span {
-    display: inherit;
-    vertical-align: middle;
-} */
-
-#tel_num:hover i {
+.hover-contact-icon .icon-phone:hover {
     color: #21e00f;
-    transition: 1s;
+    transition: 0.5s;
 }
 
-.icon-paper-plane:hover {
+.hover-contact-icon .icon-paper-plane:hover {
     color: #0088cc;
     transition: 0.5s;
 }
 
-.icon-whatsapp:hover {
+.hover-contact-icon .icon-whatsapp:hover {
     color: #25d366;
     transition: 0.5s;
 }
 
-.icon-vkontakte:hover {
+.hover-contact-icon .icon-vkontakte:hover {
     color: #3376c9;
     transition: 0.5s;
+}
+
+.icon-cancel {
+    color: #f5493d;
+    transition: 0.5s;
+}
+
+.lines-effect {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.lines-effect:before,
+.lines-effect:after {
+    right: 0;
+    bottom: 0;
+    background: #ABCDEF;
+}
+
+.lines-effect:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(-100%);
+}
+
+.lines-effect:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.lines-effect>span {
+    display: block;
+    padding: 10px;
+}
+
+.lines-effect>span:before,
+.lines-effect>span:after {
+    left: 0;
+    top: 0;
+    background: #ABCDEF;
+}
+
+.lines-effect>span:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(100%);
+}
+
+.lines-effect>span:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(-100%);
+}
+
+.lines-effect:hover:before,
+.lines-effect:hover:after,
+.lines-effect:hover>span:before,
+.lines-effect:hover>span:after {
+    transform: translate(0, 0);
+}
+
+a,
+a>span {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:before,
+a:after,
+a>span:before,
+a>span:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
 }
 
 /*--------/FEAURES&CONTACTS--------*/
@@ -295,11 +419,14 @@ body {
     .main-icons {
         padding: 10px 0;
     }
+
 }
 
 @media (min-width: 1366px) and (max-width: 2047px) {
 
-
+    .hover-contact-icon {
+        font-size: 2.2em;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1366px) {
@@ -307,20 +434,26 @@ body {
     .right .col-3 a:hover {
         border-radius: 15px;
     }
+
+    .hover-contact-icon {
+        font-size: 2.2em;
+    }
 }
 
 @media (min-width: 400px) and (max-width: 800px) {
-    body{
+    body {
         font-size: 16px;
     }
 
     #nav {
         padding: 30px;
     }
+
     .header-center {
         margin: 30px 0;
         font-size: 90%;
     }
+
     .container-main {
         margin: 15px auto;
         padding: 20px 0;
@@ -333,7 +466,10 @@ body {
 
     .main-footer .left {
         border-right: none;
-        padding: 0;
+        padding-top: 15px;
+        margin: 30px 0;
+        border-bottom: 2px solid #ABCDEF;
+        border-top: 2px solid #ABCDEF;
     }
 
     .main-footer .left li {
@@ -341,14 +477,22 @@ body {
         text-align: left;
     }
 
+    .hover-contact-icon {
+        font-size: 1.8em;
+    }
+
     .hover-contact-icon:hover {
         border-radius: 15px;
+    }
+
+    #collapsed-contact-wrap {
+        position: relative;
     }
 
 }
 
 @media (max-width: 400px) {
-    body{
+    body {
         font-size: 13px;
     }
 
@@ -377,7 +521,10 @@ body {
     .main-footer .left {
         border-right: none;
         padding: 0;
+        padding-top: 15px;
         margin: 30px 0;
+        border-bottom: 2px solid #ABCDEF;
+        border-top: 2px solid #ABCDEF;
     }
 
     .main-footer .left li {
@@ -385,7 +532,26 @@ body {
         text-align: left;
     }
 
+    .hover-contact-icon {
+        font-size: 1.7em;
+    }
+
     .hover-contact-icon:hover {
         border-radius: 10px;
+    }
+
+    #collapsed-contact-wrap span i {
+        font-size: 2em;
+        padding: 0;
+        margin: 0 0 0 -15px;;
+    }
+
+    #collapsed-contact-wrap {
+        position: relative;
+    }
+
+    a,
+    a>span {
+        font-size: 0.8em;
     }
 }
