@@ -24,14 +24,14 @@ function collapseContactOpen(iconID) {
       case 'icon-phone':
          contact.innerHTML = `
          <span class="col-2"><i class="main-footer-icons ${iconID}" style="color: #21e00f"></i></span>
-         <span class="col-8"><a class="lines-effect" style="text-align: center" href="tel:+79992468515"><span>8 (999) 246 85 15</span></a></span>
+         <span class="col-8"><a class="mx-auto d-flex lines-effect" href="tel:+79992468515"><span class="mx-auto align-self-center text-center">8 (999) 246 85 15</span></a></span>
          <span class="col-2"><i class="main-footer-icons icon-cancel" onclick="collapseContactClose()"></i></span>`;
          break;
 
       case 'icon-paper-plane':
          contact.innerHTML = `
          <span class="col-2"><i class="main-footer-icons ${iconID}" style="color: #0088cc"></i></span>
-         <span class="col-8"><a class="lines-effect" style="text-align: center" href="https://t.me/drednes"><span>Перейти в Telegram</span></a></span>
+         <span class="col-8"><a class="mx-auto d-flex lines-effect" href="https://t.me/drednes"><span class="mx-auto align-self-center text-center">Перейти в Telegram</span></a></span>
          <span class="col-2"><i class="main-footer-icons icon-cancel" onclick="collapseContactClose()"></i></span>`
          ;
          break;
@@ -39,13 +39,14 @@ function collapseContactOpen(iconID) {
       case 'icon-whatsapp':
          contact.innerHTML = `
          <span class="col-2"><i class="main-footer-icons ${iconID}" style="color: #25d366"></i></span>
-         <span class="col-8"><a class="lines-effect" style="text-align: center" href="https://api.whatsapp.com/send?phone=79992468515"><span>Перейти в What's up</span></a></span>
+         <span class="col-8"><a class="mx-auto d-flex lines-effect" href="https://api.whatsapp.com/send?phone=79992468515"><span class="mx-auto align-self-center text-center">Перейти в What's up</span></a></span>
          <span class="col-2"><i class="main-footer-icons icon-cancel" onclick="collapseContactClose()"></i></span>`;
          break;
 
       case 'icon-vkontakte':
-         contact.innerHTML = `<span class="col-2"><i class="main-footer-icons ${iconID}" style="color: #3376c9"></i></span>
-         <span class="col-8"><a class="lines-effect" style="text-align: center" href="https://vk.com/ava.narek"><span>Перейти в VK</span></a></span>
+         contact.innerHTML = `
+         <span class="col-2"><i class="main-footer-icons ${iconID}" style="color: #3376c9"></i></span>
+         <span class="col-8"><a class="mx-auto d-flex lines-effect" href="https://vk.com/ava.narek"><span class="mx-auto align-self-center text-center">Перейти в VK</span></a></span>
          <span class="col-2"><i class="main-footer-icons icon-cancel" onclick="collapseContactClose()"></i></span>`;
          break;
       default:
