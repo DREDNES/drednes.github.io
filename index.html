@@ -18,12 +18,20 @@
 
 <body>
   <!--Navbar -->
+  <div id="mobileNav" class="overlay">
+    <div class="overlay-content">
+      <a href="#">Главная</a>
+      <a href="#">Услуги</a>
+      <a href="#">Цены</a>
+      <a href="#">Контакты</a>
+    </div>
+  </div>
+  
   <nav id="nav" class="mb-1 navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="#">app<i style="font-size: 70%" class="icon-spin4 animate-spin"></i>xius</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <button class="navbar-toggler menu-wrapper" onclick="openCloseNav()" type="button">
+      <div class="hamburger-menu"></div>
+        </button>
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ml-auto nav-flex-icons">
         <li class="nav-item active">
@@ -47,13 +55,13 @@
   <!--.Content-->
   <section class="fullscreen" id="home">
     <div class="header-center">
-    <div class="separator"></div>
-    <div class="text-center">
-      <h1 class="main-text">Интернет может быть красивым. </h1>
-      <h2 class="main-text">Мы работаем над этим.</h2>
+      <div class="separator"></div>
+      <div class="text-center">
+        <h1>Интернет может быть красивым. </h1>
+        <h2>Мы работаем над этим.</h2>
+      </div>
+      <div class="separator"></div>
     </div>
-    <div class="separator"></div>
-  </div>
     <!--.Blocks-->
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-md-4 col-sm-12">
@@ -61,8 +69,8 @@
           <div class="row">
             <!-- <i class="col-12 main-icons icon-desktop"></i>
             <h3 class="col-12">Разработка и поддержка веб-сайтов</h3> -->
-            <h3 class="col-lg-9 col-md-12">Разработка и поддержка веб-сайтов</h3>
-            <i class="col-lg-3 col-md-12 main-icons icon-desktop"></i>
+            <h3 class="col-xl-9 col-lg-12">Разработка и поддержка веб-сайтов</h3>
+            <i class="col-xl-3 col-lg-12 mx-auto header-icons icon-desktop"></i>
           </div>
         </div>
       </div>
@@ -71,8 +79,8 @@
           <div class="row">
             <!-- <i class="col-12 main-icons icon-mobile-1"></i>
             <h3 class="col-12">Разработка мобильных приложений</h3> -->
-            <h3 class="col-lg-9 col-md-12">Разработка мобильных приложений</h3>
-            <i class="col-lg-3 col-md-12 main-icons icon-mobile-1"></i>
+            <h3 class="col-xl-9 col-lg-12">Разработка мобильных приложений</h3>
+            <i class="col-xl-3 col-lg-12 header-icons icon-mobile-1"></i>
           </div>
         </div>
       </div>
@@ -81,8 +89,8 @@
           <div class="row">
             <!-- <i class="col-12 main-icons icon-brush"></i>
             <h3 class="col-12">Создание уникального дизайна и цветовой палитры</h3> -->
-            <h3 class="col-lg-9 col-md-12">Создание уникального дизайна</h3>
-            <i class="col-lg-3 col-md-12 main-icons icon-brush"></i>
+            <h3 class="col-xl-9 col-lg-12">Создание уникального дизайна</h3>
+            <i class="col-xl-3 col-lg-12 header-icons icon-brush"></i>
           </div>
         </div>
       </div>
@@ -100,13 +108,26 @@
           <li><i class="icon-star"></i>Качественная работа</li>
         </ul>
       </div>
-      <div class="col-md-6 col-sm-12 right d-flex align-items-center">
-        <ul class="list-inline">
-          <li id="tel_num" class="list-inline-item"><i class="main-footer-icons icon-phone"></i><span>+7 (999) 246-85-15</span></li>
-          <li class="list-inline-item"><a href="#"><i class="main-footer-icons icon-paper-plane"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="main-footer-icons icon-whatsapp"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="main-footer-icons icon-vkontakte"></i></a></li>
-        </ul>
+      <div class="col-xl-4 col-md-6 col-sm-12 d-flex align-items-center row right">
+        <div id="tel_num" class="col-3">
+          <div class="hover-contact-icon"><i class="mx-auto main-footer-icons icon-phone"></i><span>+7 (999)
+              246-85-15</span></div>
+        </div>
+        <div class="col-3">
+          <div class="hover-contact-icon h-100 align-items-center">
+            <a href="#" class="main-footer-icons icon-paper-plane mx-auto"></a>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="hover-contact-icon">
+            <a href="#" class="main-footer-icons icon-whatsapp"></a>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="hover-contact-icon">
+            <a href="#" class="main-footer-icons icon-vkontakte"></a>
+          </div>
+        </div>
       </div>
     </div>
     <!--/.Content-->
@@ -123,7 +144,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
   <script src='/js/js.js'></script>
-  <script src="/js/flowtype.js"></script>
 </body>
 
 </html>
