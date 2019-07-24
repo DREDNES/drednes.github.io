@@ -12,7 +12,6 @@ body {
     font-size: 18px;
     max-width: 2000px;
     margin: auto;
-
 }
 
 h1,
@@ -251,10 +250,9 @@ a {
 /*--------/HOME-BLOCKS--------*/
 
 /*--------FEAURES&CONTACTS--------*/
-.main-footer {
+.main-footer{
     padding-bottom: 30px;
 }
-
 .main-footer li {
     list-style-type: none;
 }
@@ -304,7 +302,10 @@ a {
     display: none;
     transition: 0.5s;
 }
-
+#contact{
+    padding: 0;
+    margin: 0;
+}
 #contact .main-footer-icons {
     transition: 0.5s;
     margin: 0 10px;
@@ -315,7 +316,7 @@ a {
 }
 
 #contact .info {
-    height: 2.5em;
+    min-height: 2.5em;
     border-radius: 15px;
     font-size: 1.2em;
     background-color: rgba(171, 205, 239, 0.5);
@@ -441,6 +442,8 @@ a {
 
     #collapsed-contact-wrap {
         position: relative;
+        margin: 0;
+        padding: 0;
     }
 
 }
@@ -467,7 +470,7 @@ a {
         margin: 20px auto;
         padding: 10px 0;
     }
-
+   
     .main-footer ul {
         padding: 0;
         vertical-align: top;
@@ -477,9 +480,9 @@ a {
         border-right: none;
         padding: 0;
         padding-top: 15px;
-        margin: 30px 0;
         border-bottom: 2px solid #ABCDEF;
         border-top: 2px solid #ABCDEF;
+        margin: 30px 0;
     }
 
     .main-footer .left li {
@@ -497,5 +500,7 @@ a {
 
     #collapsed-contact-wrap {
         position: relative;
+        margin: 0;
+        padding: 0;
     }
 }

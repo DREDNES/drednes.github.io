@@ -15,11 +15,13 @@ $(function () {
 })();
 
 function collapseContactOpen(iconID) {
+   
+   const contact = document.getElementById("contact");
    document.querySelectorAll('.hover-contact-icon').forEach(element => {
       element.style.display = "none";
-   });
+   });   
    document.getElementById("collapsed-contact-wrap").style.display = "block";
-   const contact = document.getElementById("contact");
+
    switch (iconID) {
       case 'icon-phone':
          contact.innerHTML = `
@@ -60,6 +62,8 @@ function collapseContactOpen(iconID) {
 
          break;
    }
+
+
 }
 
 function collapseContactClose() {
