@@ -261,6 +261,7 @@ body {
 .hover-contact-icon {
     transition: 0.2s;
     display: block;
+    font-size: 2.2em;
 }
 
 .hover-contact-icon:hover {
@@ -351,17 +352,12 @@ body {
 /*--------/FEAURES&CONTACTS--------*/
 
 @media (min-width: 2048px) {
-    .main-icons {
-        padding: 10px 0;
-    }
 
 }
 
 @media (min-width: 1366px) and (max-width: 2047px) {
 
-    .hover-contact-icon {
-        font-size: 2.2em;
-    }
+
 }
 
 @media (min-width: 800px) and (max-width: 1366px) {
@@ -370,9 +366,6 @@ body {
         border-radius: 15px;
     }
 
-    .hover-contact-icon {
-        font-size: 2.2em;
-    }
 }
 
 @media (min-width: 400px) and (max-width: 800px) {
