@@ -140,7 +140,11 @@ a {
 #nav {
     padding: 30px 100px;
 }
+.navbar-toggler:focus {
 
+    outline:none !important;
+    
+    }
 .navbar-brand {
     font-size: 2.5em;
     font-family: 'Exo 2', sans-serif;
