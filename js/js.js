@@ -3,7 +3,7 @@ $(function () {
 });
 (function () {
    $('.menu-wrapper').on('click', function () {
-      $('.hamburger-menu').toggleClass('animate');
+      $(this).find(".hambergerIcon").toggleClass("open");
       if (document.getElementById("mobileNav").style.width == "0%") {
          document.getElementById("mobileNav").style.width = "100%";
          document.getElementById("mobileNav").style.opacity = "0.95";
@@ -23,37 +23,45 @@ function collapseContactOpen(iconID) {
    switch (iconID) {
       case 'icon-phone':
          contact.innerHTML = `
-         <span class="col-2"><i class="main-footer-icons ${iconID}" style="color: #21e00f"></i></span>
-         <span class="col-8"><a class="mx-auto d-flex lines-effect" href="tel:+79992468515"><span class="mx-auto align-self-center text-center">8 (999) 246 85 15</span></a></span>
-         <span class="col-2"><i class="main-footer-icons icon-cancel" onclick="collapseContactClose()"></i></span>`;
+            <i class="main-footer-icons ${iconID}" style="color: #21e00f"></i>
+            <div class="col-8 collapsed-contact row info">
+              <a class="mx-auto"  href="tel:+79992468515">8 (999) 246 85 15</a>
+            </div>
+              <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
          break;
 
       case 'icon-paper-plane':
          contact.innerHTML = `
-         <span class="col-2"><i class="main-footer-icons ${iconID}" style="color: #0088cc"></i></span>
-         <span class="col-8"><a class="mx-auto d-flex lines-effect" href="https://t.me/drednes"><span class="mx-auto align-self-center text-center">Перейти в Telegram</span></a></span>
-         <span class="col-2"><i class="main-footer-icons icon-cancel" onclick="collapseContactClose()"></i></span>`
-         ;
+         <i class="main-footer-icons ${iconID}" style="color: #0088cc"></i>
+         <div class="col-8 collapsed-contact row info">
+           <a class="mx-auto"  href="https://t.me/drednes">Перейти в Telegram</a>
+         </div>
+           <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
          break;
 
       case 'icon-whatsapp':
          contact.innerHTML = `
-         <span class="col-2"><i class="main-footer-icons ${iconID}" style="color: #25d366"></i></span>
-         <span class="col-8"><a class="mx-auto d-flex lines-effect" href="https://api.whatsapp.com/send?phone=79992468515"><span class="mx-auto align-self-center text-center">Перейти в What's up</span></a></span>
-         <span class="col-2"><i class="main-footer-icons icon-cancel" onclick="collapseContactClose()"></i></span>`;
+         <i class="main-footer-icons ${iconID}" style="color: #25d366"></i>
+         <div class="col-8 collapsed-contact row info">
+           <a class="mx-auto"  href="https://api.whatsapp.com/send?phone=79992468515">Перейти в What's up</a>
+         </div>
+           <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
          break;
 
       case 'icon-vkontakte':
          contact.innerHTML = `
-         <span class="col-2"><i class="main-footer-icons ${iconID}" style="color: #3376c9"></i></span>
-         <span class="col-8"><a class="mx-auto d-flex lines-effect" href="https://vk.com/ava.narek"><span class="mx-auto align-self-center text-center">Перейти в VK</span></a></span>
-         <span class="col-2"><i class="main-footer-icons icon-cancel" onclick="collapseContactClose()"></i></span>`;
+         <i class="main-footer-icons ${iconID}" style="color: #3376c9"></i>
+         <div class="col-8 collapsed-contact row info">
+           <a class="mx-auto"  href="https://vk.com/ava.narek">Перейти в VK</a>
+         </div>
+           <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
          break;
       default:
 
          break;
    }
 }
+
 function collapseContactClose() {
    document.querySelectorAll('.hover-contact-icon').forEach(element => {
       element.style.display = "block";

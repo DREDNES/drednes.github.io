@@ -60,58 +60,61 @@ body {
     background-color: transparent;
     z-index: 2;
     border: none;
-    height: 30px;
-    ;
+    height: 40px;
+    width: 50px;
+
 }
 
-.hamburger-menu,
-.hamburger-menu:after,
-.hamburger-menu:before {
-    width: 30px;
-    height: 3px;
+.hambergerIcon {
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 50px;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: all ease 0.5s;
 }
 
-.hamburger-menu {
-    position: relative;
-    background: rgba(255, 255, 255, 1);
-    transition: all 0ms 300ms;
-}
-
-.animate {
-    background: rgba(255, 255, 255, 0);
-}
-
-.hamburger-menu:before {
+.hambergerIcon::before,
+.hambergerIcon::after {
     content: "";
     position: absolute;
-    left: 0;
-    bottom: 10px;
-    background: rgba(255, 255, 255, 1);
-    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    height: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+    margin: auto;
+    width: 50%;
+    transition: all ease 0.5s;
 }
 
-.hamburger-menu:after {
-    content: "";
-    position: absolute;
+.hambergerIcon::before {
+    top: -10px;
     left: 0;
-    top: 10px;
-    background: rgba(255, 255, 255, 1);
-    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transform-origin: left;
 }
 
-.hamburger-menu.animate:after {
+.hambergerIcon::after {
+    bottom: -10px;
+    right: 0;
+    transform-origin: right;
+}
+
+.open {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.open::before {
     top: 0;
-    transform: rotate(45deg);
-    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-    ;
+    transform: translateX(100%) rotate(-90deg);
 }
 
-.hamburger-menu.animate:before {
+.open::after {
     bottom: 0;
-    transform: rotate(-45deg);
-    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-    ;
+    transform: translateX(-100%) rotate(-90deg);
 }
+
 
 /*--------HAMBURGER--------*/
 
@@ -121,7 +124,6 @@ body {
 
 .navbar-brand {
     font-size: 2.5em;
-    margin-top: -7px;
     font-family: "Share Tech Mono", monospace;
 }
 
@@ -275,112 +277,77 @@ body {
     transform: translate(-50%, -50%);
     display: none;
     transition: 0.5s;
-
 }
 
-#collapsed-contact-wrap .main-footer-icons {
-    font-size: 2.5em;
-}
-
-#collapsed-contact-wrap .icon-cancel {
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-#collapsed-contact-wrap .icon-cancel:hover {
-    background-color: #f5493d;
-    border-radius: 0.3em;
-    color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-.collapsed-contact {
-    background-color: rgba(171, 205, 239, 0.5);
-    border-radius: 15px;
+#contact .main-footer-icons {
     transition: 0.5s;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    margin-left: -15px;
+}
+
+#contact .info {
+    line-height: 2.5em;
+    border-radius: 15px;
+    font-size: 1.2em;
+    background-color: rgba(171, 205, 239, 0.5);
+    box-shadow: 0 0 20px rgba(25, 53, 65, 0.5);
+}
+
+#contact .icon-cancel-circled {
+    font-size: 2em;
+    cursor: pointer;
+    color: #2D2D2D;
+    transition: 0.3s;
+}
+
+#contact .icon-cancel-circled:hover {
+    color: red;
+    -webkit-transform: rotate(0.8);
+    -ms-transform: rotate(0.8);
+    transform: rotate(0.8);
 }
 
 #contact a {
-   
     text-decoration: none;
     color: #323232;
     transition: 0.5s;
-    height: 50px;
     float: none;
     display: inline-block;
-    vertical-align: middle;
-    line-height: 1em;
-}
-
-#contact a span{
+    cursor: pointer;
+    height: 100%;
     margin: auto 0;
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 #contact a:hover {
     color: #ABCDEF;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .main-footer-icons {
     color: #ABCDEF;
-    transition: 0.5s;
+    transition: 0.3s;
     font-size: 1.2em;
 }
 
 .hover-contact-icon .icon-phone:hover {
     color: #21e00f;
-    transition: 0.5s;
 }
 
 .hover-contact-icon .icon-paper-plane:hover {
     color: #0088cc;
-    transition: 0.5s;
 }
 
 .hover-contact-icon .icon-whatsapp:hover {
     color: #25d366;
-    transition: 0.5s;
 }
 
 .hover-contact-icon .icon-vkontakte:hover {
     color: #3376c9;
-    transition: 0.5s;
 }
 
-.icon-cancel {
-    color: #f5493d;
-    transition: 0.5s;
-}
-#contact a {
-    font-size: 20px;
-    margin: auto 10px;
-    position: relative;
-    cursor: pointer;
-    line-height: 1;
-    text-decoration: none;
-}
-
-#contact a:after {
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    margin-top: 10px;
-    background-color: #ABCDEF;
-    content: "";
-    transition: width 0.3s ease-out;
-}
-
-#contact a:hover:after,
-#contact a:focus:after {
-    width: 100%;
-}
 /*--------/FEAURES&CONTACTS--------*/
 
 @media (min-width: 2048px) {
@@ -414,7 +381,8 @@ body {
     }
 
     #nav {
-        padding: 30px;
+        margin-top: 30px;
+        padding: 0 30px;
     }
 
     .header-center {
@@ -465,7 +433,8 @@ body {
     }
 
     #nav {
-        padding: 15px;
+        margin-top: 20px;
+        padding: 0 20px;
     }
 
     .header-center {
@@ -508,18 +477,7 @@ body {
         border-radius: 10px;
     }
 
-    #collapsed-contact-wrap span i {
-        font-size: 2em;
-        padding: 0;
-        margin: 0 0 0 -15px;;
-    }
-
     #collapsed-contact-wrap {
         position: relative;
-    }
-
-    a,
-    a>span {
-        font-size: 0.8em;
     }
 }
