@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Oswald:500|Rubik&display=swap&subset=cyrillic');
 
 html {
     min-height: 100%;
@@ -10,6 +10,22 @@ html {
 body {
     background: transparent;
     font-size: 18px;
+    max-width: 2000px;
+    margin: auto;
+
+}
+
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+h3,
+li,
+p,
+a {
+    font-family: 'Rubik', sans-serif;
 }
 
 /*--------NAVBAR--------*/
@@ -46,6 +62,10 @@ body {
     color: #ABCDEF;
     display: block;
     transition: 0.3s;
+}
+
+.overlay a::after {
+    height: 0;
 }
 
 .overlay a:hover,
@@ -124,10 +144,15 @@ body {
 
 .navbar-brand {
     font-size: 2.5em;
-    font-family: "Share Tech Mono", monospace;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.navbar-brand i {
+    font-size: 60%;
 }
 
 .nav-link {
+    font-family: 'Exo 2', sans-serif;
     display: block;
     margin: auto;
     padding: 1rem 1.9rem;
@@ -290,11 +315,15 @@ body {
 }
 
 #contact .info {
-    line-height: 2.5em;
+    height: 2.5em;
     border-radius: 15px;
     font-size: 1.2em;
     background-color: rgba(171, 205, 239, 0.5);
     box-shadow: 0 0 20px rgba(25, 53, 65, 0.5);
+}
+
+#contact .info a {
+    height: fit-content;
 }
 
 #contact .icon-cancel-circled {
@@ -306,9 +335,6 @@ body {
 
 #contact .icon-cancel-circled:hover {
     color: red;
-    -webkit-transform: rotate(0.8);
-    -ms-transform: rotate(0.8);
-    transform: rotate(0.8);
 }
 
 #contact a {
@@ -352,15 +378,12 @@ body {
 /*--------/FEAURES&CONTACTS--------*/
 
 @media (min-width: 2048px) {
-.hover-contact-icon{
-    font-size: 4em;
-}
+    .hover-contact-icon {
+        font-size: 2.5em;
+    }
 }
 
-@media (min-width: 1366px) and (max-width: 2047px) {
-
-
-}
+@media (min-width: 1366px) {}
 
 @media (min-width: 800px) and (max-width: 1366px) {
 
@@ -465,7 +488,7 @@ body {
     }
 
     .hover-contact-icon {
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
 
     .hover-contact-icon:hover {

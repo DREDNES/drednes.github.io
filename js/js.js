@@ -23,7 +23,7 @@ function collapseContactOpen(iconID) {
    switch (iconID) {
       case 'icon-phone':
          contact.innerHTML = `
-            <i class="main-footer-icons ${iconID}" style="color: #21e00f"></i>
+            <i class="col-2 main-footer-icons ${iconID}" style="color: #21e00f"></i>
             <div class="col-8 collapsed-contact row info">
               <a class="mx-auto"  href="tel:+79992468515">8 (999) 246 85 15</a>
             </div>
@@ -32,7 +32,7 @@ function collapseContactOpen(iconID) {
 
       case 'icon-paper-plane':
          contact.innerHTML = `
-         <i class="main-footer-icons ${iconID}" style="color: #0088cc"></i>
+         <i class="col-2 main-footer-icons ${iconID}" style="color: #0088cc"></i>
          <div class="col-8 collapsed-contact row info">
            <a class="mx-auto"  href="https://t.me/drednes">Перейти в Telegram</a>
          </div>
@@ -41,7 +41,7 @@ function collapseContactOpen(iconID) {
 
       case 'icon-whatsapp':
          contact.innerHTML = `
-         <i class="main-footer-icons ${iconID}" style="color: #25d366"></i>
+         <i class="col-2 main-footer-icons ${iconID}" style="color: #25d366"></i>
          <div class="col-8 collapsed-contact row info">
            <a class="mx-auto"  href="https://api.whatsapp.com/send?phone=79992468515">Перейти в What's up</a>
          </div>
@@ -50,7 +50,7 @@ function collapseContactOpen(iconID) {
 
       case 'icon-vkontakte':
          contact.innerHTML = `
-         <i class="main-footer-icons ${iconID}" style="color: #3376c9"></i>
+         <i class="col-2 main-footer-icons ${iconID}" style="color: #3376c9"></i>
          <div class="col-8 collapsed-contact row info">
            <a class="mx-auto"  href="https://vk.com/ava.narek">Перейти в VK</a>
          </div>
