@@ -17,17 +17,13 @@ $(function () {
 function collapseContactOpen(iconID) {
    
    const contact = document.getElementById("contact");
-   document.querySelectorAll('.hover-contact-icon').forEach(element => {
-      element.style.display = "none";
-   });   
-   document.getElementById("collapsed-contact-wrap").style.display = "block";
-
+   $('.switch-block').toggleClass('start-anim');
    switch (iconID) {
       case 'icon-phone':
          contact.innerHTML = `
             <i class="col-2 main-footer-icons ${iconID}" style="color: #21e00f"></i>
             <div class="col-8 collapsed-contact row info">
-              <a class="mx-auto"  href="tel:+79992468515">8 (999) 246 85 15</a>
+              <a class="mx-auto" href="tel:+79992468515">8 (999) 246 85 15</a>
             </div>
               <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
          break;
@@ -36,7 +32,7 @@ function collapseContactOpen(iconID) {
          contact.innerHTML = `
          <i class="col-2 main-footer-icons ${iconID}" style="color: #0088cc"></i>
          <div class="col-8 collapsed-contact row info">
-           <a class="mx-auto"  href="https://t.me/drednes">Перейти в Telegram</a>
+           <a class="mx-auto" href="https://t.me/drednes">Перейти в Telegram</a>
          </div>
            <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
          break;
@@ -45,7 +41,7 @@ function collapseContactOpen(iconID) {
          contact.innerHTML = `
          <i class="col-2 main-footer-icons ${iconID}" style="color: #25d366"></i>
          <div class="col-8 collapsed-contact row info">
-           <a class="mx-auto"  href="https://api.whatsapp.com/send?phone=79992468515">Перейти в What's up</a>
+           <a class="mx-auto" href="https://api.whatsapp.com/send?phone=79992468515">Перейти в What's up</a>
          </div>
            <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
          break;
@@ -54,7 +50,7 @@ function collapseContactOpen(iconID) {
          contact.innerHTML = `
          <i class="col-2 main-footer-icons ${iconID}" style="color: #3376c9"></i>
          <div class="col-8 collapsed-contact row info">
-           <a class="mx-auto"  href="https://vk.com/ava.narek">Перейти в VK</a>
+           <a class="mx-auto" href="https://vk.com/ava.narek">Перейти в VK</a>
          </div>
            <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
          break;
@@ -67,8 +63,6 @@ function collapseContactOpen(iconID) {
 }
 
 function collapseContactClose() {
-   document.querySelectorAll('.hover-contact-icon').forEach(element => {
-      element.style.display = "block";
-   });
-   document.getElementById("collapsed-contact-wrap").style.display = "none";
+   $('.switch-block').toggleClass('start-anim');
+   setTimeout(document.getElementById("contact").innerHTML = '', 500);
 }
