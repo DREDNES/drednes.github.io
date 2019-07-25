@@ -19,9 +19,10 @@ h2 {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
 }
-h3{
+
+h3 {
     font-family: 'Rubik', sans-serif;
-font-weight: 400;
+    font-weight: 400;
 }
 
 li,
@@ -145,14 +146,15 @@ a {
     border: none;
     height: 50px;
     width: 50px;
-   
+
 }
 
 .navbar-toggler:focus {
 
-    outline:none !important;
-    
-    }
+    outline: none !important;
+
+}
+
 .navbar-brand {
     font-size: 2.5em;
     font-family: 'Exo 2', sans-serif;
@@ -261,9 +263,10 @@ a {
 /*--------/HOME-BLOCKS--------*/
 
 /*--------FEAURES&CONTACTS--------*/
-.main-footer{
+.main-footer {
     padding-bottom: 30px;
 }
+
 .main-footer li {
     list-style-type: none;
 }
@@ -291,12 +294,14 @@ a {
 .right {
     text-align: center;
 }
-.switch-block{
+
+.switch-block {
     opacity: 0;
     transition: .2s;
 }
+
 .hover-contact-icon {
-    transition:all .5s;
+    transition: all .5s;
     font-size: 2.2em;
 }
 
@@ -312,17 +317,19 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition:all .5s;
+    transition: all .5s;
 }
 
-.start-anim{
+.start-anim {
     opacity: 1;
     display: block;
 }
-#contact{
+
+#contact {
     padding: 0;
     margin: 0;
 }
+
 #contact .main-footer-icons {
     transition: 0.5s;
     margin: 0 10px;
@@ -457,7 +464,7 @@ a {
         border-radius: 15px;
     }
 
-    
+
 
 }
 
@@ -483,7 +490,7 @@ a {
         margin: 20px auto;
         padding: 10px 0;
     }
-   
+
     .main-footer ul {
         padding: 0;
         vertical-align: top;

@@ -1,22 +1,22 @@
 $(function () {
-   document.getElementById("mobileNav").style.width = "0%";
+   document.getElementById('mobileNav').style.width = '0%';
 });
 (function () {
    $('.menu-wrapper').on('click', function () {
-      $(this).find(".hambergerIcon").toggleClass("open");
-      if (document.getElementById("mobileNav").style.width == "0%") {
-         document.getElementById("mobileNav").style.width = "100%";
-         document.getElementById("mobileNav").style.opacity = "0.95";
+      $(this).find('.hambergerIcon').toggleClass('open');
+      if (document.getElementById('mobileNav').style.width == '0%') {
+         document.getElementById('mobileNav').style.width = '100%';
+         document.getElementById('mobileNav').style.opacity = '0.95';
       } else {
-         document.getElementById("mobileNav").style.width = "0%";
-         document.getElementById("mobileNav").style.opacity = "0";
+         document.getElementById('mobileNav').style.width = '0%';
+         document.getElementById('mobileNav').style.opacity = '0';
       }
    });
 })();
 
-function collapseContactOpen(iconID) {
+function CollapseContactOpen(iconID) {
    
-   const contact = document.getElementById("contact");
+   const contact = document.getElementById('contact');
    $('.switch-block').toggleClass('start-anim');
    switch (iconID) {
       case 'icon-phone':
@@ -25,7 +25,7 @@ function collapseContactOpen(iconID) {
             <div class="col-8 collapsed-contact row info">
               <a class="mx-auto" href="tel:+79992468515">8 (999) 246 85 15</a>
             </div>
-              <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
+              <i class="col-2 icon-cancel-circled" onclick="CollapseContactClose()"></i>`;
          break;
 
       case 'icon-paper-plane':
@@ -34,7 +34,7 @@ function collapseContactOpen(iconID) {
          <div class="col-8 collapsed-contact row info">
            <a class="mx-auto" href="https://t.me/drednes">Перейти в Telegram</a>
          </div>
-           <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
+           <i class="col-2 icon-cancel-circled" onclick="CollapseContactClose()"></i>`;
          break;
 
       case 'icon-whatsapp':
@@ -43,7 +43,7 @@ function collapseContactOpen(iconID) {
          <div class="col-8 collapsed-contact row info">
            <a class="mx-auto" href="https://api.whatsapp.com/send?phone=79992468515">Перейти в What's up</a>
          </div>
-           <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
+           <i class="col-2 icon-cancel-circled" onclick="CollapseContactClose()"></i>`;
          break;
 
       case 'icon-vkontakte':
@@ -52,7 +52,7 @@ function collapseContactOpen(iconID) {
          <div class="col-8 collapsed-contact row info">
            <a class="mx-auto" href="https://vk.com/ava.narek">Перейти в VK</a>
          </div>
-           <i class="col-2 icon-cancel-circled" onclick="collapseContactClose()"></i>`;
+           <i class="col-2 icon-cancel-circled" onclick="CollapseContactClose()"></i>`;
          break;
       default:
 
@@ -62,7 +62,7 @@ function collapseContactOpen(iconID) {
 
 }
 
-function collapseContactClose() {
+function CollapseContactClose() {
    $('.switch-block').toggleClass('start-anim');
-   setTimeout(document.getElementById("contact").innerHTML = '', 500);
+   setTimeout(document.getElementById('contact').innerHTML = '', 500);
 }
