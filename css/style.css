@@ -175,8 +175,7 @@ a {
 .overlay a:focus {
     color: #f1f1f1;
 }
-
-/*--------MOBILE-NAV--------*/
+/*--------/MOBILE-NAV--------*/
 
 /*--------HAMBURGER--------*/
 
@@ -229,9 +228,7 @@ a {
     bottom: 0;
     transform: translateX(-100%) rotate(-90deg);
 }
-
-
-/*--------HAMBURGER--------*/
+/*--------/HAMBURGER--------*/
 
 #nav {
     padding: 20px 100px;
@@ -253,7 +250,6 @@ a {
 }
 
 .navbar-brand {
-    z-index: 2;
     font-size: 2.5em;
     font-family: 'Exo 2', sans-serif;
 }
@@ -303,8 +299,7 @@ a {
     left: 0;
     height: 100%;
 }
-
-/*--------NAVBAR--------*/
+/*--------/NAVBAR--------*/
 
 /*--------MAINPAGE--------*/
 .separator {
