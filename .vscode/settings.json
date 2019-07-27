@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+        "*.png": true,
+        "*.svg": true,
+        "*.webmanifest": true,
+        "browserconfig.xml": true
+    }
+}
