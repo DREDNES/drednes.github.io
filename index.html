@@ -20,20 +20,11 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/animation.css">
   <link rel="stylesheet" href="/css/fontello.css">
-  
+
   <title>Appoxius</title>
 </head>
 
 <body>
-  <!--Loader -->
-    <div class="loader">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <div class="bar4"></div>
-        <div class="bar5"></div>
-        <div class="bar6"></div>
-      </div>
   <!--Navbar -->
   <div id="mobileNav" class="overlay">
     <div class="overlay-content">
@@ -69,7 +60,7 @@
   </nav>
   <!--/Navbar-->
   <!--.Content-->
-  <section class="fullscreen" id="home">
+  <section>
     <div class="header-center">
       <div class="separator"></div>
       <div class="text-center">
@@ -79,30 +70,36 @@
       <div class="separator"></div>
     </div>
     <!--Services blocks-->
-    <div class="row d-flex justify-content-center align-items-center">
+    <div id="services-block" class="row d-flex justify-content-center align-items-center">
       <div class="col-md-4 col-sm-12">
-        <div class="container-main text-center">
-          <div class="row">
-            <h3 class="col-xl-9 col-lg-12">Разработка и поддержка веб-сайтов</h3>
-            <i class="col-xl-3 col-lg-12 mx-auto header-icons icon-desktop"></i>
+        <a class="mainblock-link" href="services-pages/web.html">
+          <div class="container-main text-center">
+            <div class="row">
+              <h3 class="col-xl-9 col-lg-12">Разработка и поддержка веб-сайтов</h3>
+              <i class="col-xl-3 col-lg-12 mx-auto header-icons icon-desktop"></i>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-4 col-sm-12">
-        <div class="container-main text-center">
-          <div class="row">
-            <h3 class="col-xl-9 col-lg-12">Разработка мобильных приложений</h3>
-            <i class="col-xl-3 col-lg-12 header-icons icon-mobile-1"></i>
+        <a class="mainblock-link" href="services-pages/mobile.html">
+          <div class="container-main text-center">
+            <div class="row">
+              <h3 class="col-xl-9 col-lg-12">Разработка мобильных приложений</h3>
+              <i class="col-xl-3 col-lg-12 header-icons icon-mobile-1"></i>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-4 col-sm-12">
-        <div class="container-main text-center">
-          <div class="row">
-            <h3 class="col-xl-9 col-lg-12">Создание уникального дизайна</h3>
-            <i class="col-xl-3 col-lg-12 header-icons icon-brush"></i>
+        <a class="mainblock-link" href="services-pages/design.html">
+          <div class="container-main text-center">
+            <div class="row">
+              <h3 class="col-xl-9 col-lg-12">Создание уникального дизайна</h3>
+              <i class="col-xl-3 col-lg-12 header-icons icon-brush"></i>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
     </div>
@@ -153,8 +150,6 @@
 
   <!-- JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3//TweenMax.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/plugins/CSSRulePlugin.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
