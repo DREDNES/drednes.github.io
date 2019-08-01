@@ -165,16 +165,16 @@ a {
 }
 
 
-.nav-link  {
+.nav-link {
     margin: 0 10px;
     margin-top: 10px;
-    position:relative;
+    position: relative;
     z-index: 1;
     font-family: 'Exo 2', sans-serif;
     font-size: 1.4rem;
     transition: all .5s;
 
-  }
+}
 
 .nav-link:after {
     transition: all .3s;
@@ -189,19 +189,20 @@ a {
     height: 1px;
     content: '.';
     color: transparent;
-    border-radius: 0.5em; 
+    border-radius: 0.5em;
     background-color: rgba(171, 205, 239, 0.5);
     visibility: none;
     opacity: 0;
     z-index: -1;
-  }
+}
 
 .nav-link:hover:after {
     opacity: 1;
     visibility: visible;
     height: 100%;
-  }
-  /* Keyframes */
+}
+
+/* Keyframes */
 
 /* .nav-link {
     font-family: 'Exo 2', sans-serif;
@@ -349,7 +350,7 @@ a {
 }
 
 .hover-contact-icon {
-    transition: all .5s;
+    transition: all .3s;
     font-size: 2.2em;
 }
 
@@ -460,8 +461,9 @@ a {
     padding: 2em;
     transition: .3s;
 }
-.grid-item-content:hover{
-    box-shadow: 0 2px 0.7em #323232; 
+
+.grid-item-content:hover {
+    box-shadow: 0 2px 20px #323232;
 }
 
 .grid-item-content ul {
@@ -469,17 +471,24 @@ a {
 }
 
 .price-container {
+    display: inline-block;
     height: 100%;
+    width: 100%;
     border-radius: 0.5em;
     background: linear-gradient(120deg, #21b5ff, #8245df);
     color: #eaeef4;
-    padding: 0.5em;
 }
 
-.price-container p {
-    margin: 1em 0;
+.p1, .p2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
 }
 
+.p2 {
+    margin-bottom: 2em;
+}
 
 .success-container {
     position: absolute;
@@ -487,6 +496,7 @@ a {
     bottom: 6em;
     left: 0;
     right: 0;
+    z-index: -999;
 }
 
 svg {
@@ -508,13 +518,13 @@ svg.animate path {
 @keyframes draw {
     0% {
         opacity: 1;
-        stroke-dashoffset: -99.47578430175781;
+        stroke-dashoffset: 0;
         fill: transparent;
         transform: translateY(0);
     }
 
     35% {
-        stroke-dashoffset: 0;
+        stroke-dashoffset: -99.47578430175781;
         fill: transparent;
     }
 
@@ -526,7 +536,6 @@ svg.animate path {
 
     100% {
         fill: #3da35a;
-        stroke-dashoffset: 0;
         opacity: 0;
         transform: translateY(-10px);
     }
@@ -550,8 +559,9 @@ svg.animate path {
     cursor: pointer;
     background: linear-gradient(90deg, #49c2ff, #6a27d2);
 }
-.order:hover{
-    box-shadow: 5px 5px 0px #282936; 
+
+.order:hover {
+    box-shadow: 5px 5px 0px #282936;
 }
 
 #landing {
@@ -592,7 +602,11 @@ svg.animate path {
     }
 }
 
-@media (min-width: 800px) and (max-width: 1366px) {}
+@media (min-width: 800px) and (max-width: 1366px) {
+    body {
+        font-size: 14px;
+    }
+}
 
 @media (min-width: 400px) and (max-width: 800px) {
     body {

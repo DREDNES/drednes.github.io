@@ -71,11 +71,14 @@ document.querySelectorAll('button[class^=order]').forEach(btn => {
 
   btn.addEventListener('click', function(){
     const svg = event.target.parentNode.querySelector('svg');
+    const container = event.target.parentNode.querySelector('.success-container');
     if (!svg.classList.contains("animate")) {
+      container.style.zIndex = '999';
       svg.classList.add("animate");
       
       setTimeout(function(){      
         svg.classList.remove("animate");
+        container.style.zIndex = '-999';
       }, 1700);  
     } 
   });
