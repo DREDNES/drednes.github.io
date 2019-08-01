@@ -464,7 +464,7 @@ a {
 }
 
 .grid-item-content:hover {
-    box-shadow: 0 2px 20px #323232;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .grid-item-content ul {
