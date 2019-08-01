@@ -456,10 +456,11 @@ a {
 }
 
 .grid-item-content {
+    display: inline-block;
     color: #282936;
     border-radius: 1em;
-    padding: 2em;
     transition: .3s;
+    padding: 1em;
 }
 
 .grid-item-content:hover {
@@ -467,7 +468,8 @@ a {
 }
 
 .grid-item-content ul {
-    padding: 1em;
+    padding:0 .5em;
+    margin:1.5em 1em;
 }
 
 .price-container {
@@ -545,7 +547,7 @@ svg.animate path {
 .order {
     outline: none !important;
     transition: .2s;
-    margin: 2em auto 0 auto;
+    margin: 1.5em auto 0 auto;
     width: 100%;
     padding: 15px 34px;
     overflow: hidden;
