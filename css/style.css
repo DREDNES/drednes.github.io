@@ -477,6 +477,7 @@ a {
     border-radius: 0.5em;
     background: linear-gradient(120deg, #21b5ff, #8245df);
     color: #eaeef4;
+    padding: 0.3em;
 }
 
 .p1, .p2 {
