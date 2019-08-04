@@ -169,7 +169,7 @@ a {
 }
 
 
-.nav-link {
+/* .nav-link {
     margin: 0 10px;
     margin-top: 10px;
     position: relative;
@@ -204,11 +204,11 @@ a {
     opacity: 1;
     visibility: visible;
     height: 100%;
-}
+} */
 
 /* Keyframes */
 
-/* .nav-link {
+.nav-link {
     font-family: 'Exo 2', sans-serif;
     display: block;
     margin: auto;
@@ -248,9 +248,9 @@ a {
     right: 0;
     left: 0;
     height: 100%;
-} */
+}
 
-/*--------/NAVBAR--------*/
+/*--------/NAVBAR-------- */
 
 /*------------------------HOME PAGE------------------------*/
 .separator {
