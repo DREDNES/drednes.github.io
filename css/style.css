@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300|Exo+2|Rubik:300,400&display=swap&subset=cyrillic');
 
+* {
+    padding: 0;
+    margin: 0;
+}
 
 html {
     min-height: 100%;
@@ -288,12 +292,13 @@ a {
     margin: 60px auto;
     padding: 20px 10px;
     border-radius: 25px;
-    transition: .3s;
+    transition: .5s;
 }
 
 .container-main:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     background-color: #ABCDEF;
+    transform: scale(1.03);
 }
 
 .container-main h3 {
@@ -448,58 +453,73 @@ a {
 /*------------------------/HOME PAGE------------------------*/
 /*------------------------SERVICES PAGE------------------------*/
 #services {
-    padding: 20px;
+    margin: 0 auto;
+    width: 70%;
+    padding: 2em;
 }
 
-.grid-item {
+.item-wrap {
     padding: 10px;
 }
 
-.grid-item-content {
-    display: inline-block;
+.services-item {
+    width: 100%;
     color: #282936;
     border-radius: 1em;
-    transition: .3s;
+    transition: .5s;
     padding: 1em;
 }
 
-.grid-item-content:hover {
+.services-item h3{
+    font-size: 1.5em;
+} 
+
+.services-item:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
 }
-
-.grid-item-content ul {
-    padding:0 .5em;
-    margin:1.5em 1em;
-}
-
-.price-container {
+.price-container, .order-but{
+    background: linear-gradient(to right, #21b5ff, #8245df);
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.5em;
+    border-width: 0;
+    color: #eaeef4;
+    padding: 0.8em;
+    width: 100%;
     display: inline-block;
     height: 100%;
+    font-size: 1em;
+}
+
+.order-but {
+    margin-top: 1em;
+    outline: none !important;
+    transition: .2s;
     width: 100%;
-    border-radius: 0.5em;
-    background: linear-gradient(120deg, #21b5ff, #8245df);
-    color: #eaeef4;
-    padding: 0.3em;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
 }
-
-.p1, .p2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-}
-
-.p2 {
-    margin-bottom: 2em;
+.order-but:hover {
+    box-shadow: 5px 5px 0px #282936;
 }
 
 .success-container {
     position: absolute;
     top: 0;
-    bottom: 6em;
+    bottom: 4em;
     left: 0;
     right: 0;
     z-index: -999;
+}
+
+#price-info{
+    color: #eaeef4;
+    opacity: 0.7;
+    font-size: 1.2em;
+    width: 90%; 
+    margin: 1em auto;
 }
 
 svg {
@@ -544,43 +564,28 @@ svg.animate path {
     }
 }
 
-.order {
-    outline: none !important;
-    transition: .2s;
-    margin: 1.5em auto 0 auto;
-    width: 100%;
-    padding: 15px 34px;
-    overflow: hidden;
-    color: white;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 400;
-    border-width: 0;
-    border-radius: 0.5em;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    outline: none;
-    cursor: pointer;
-    background: linear-gradient(90deg, #49c2ff, #6a27d2);
-}
-
-.order:hover {
-    box-shadow: 5px 5px 0px #282936;
-}
-
 #landing {
-    background-color: #f0c0b5;
+    background-color: #fcd173;
 }
 
-#multiple {
-    background-color: #eaeef4;
+#shop {
+    background-color: #ff9e8d;
+}
+
+#commerce {
+    background-color: #eeff8d;
+}
+
+#info {
+    background-color: #a9ffa1;
 }
 
 #mobile {
-    background-color: #8ec1c5;
+    background-color: #8dc8ff;
 }
 
 #design {
-    background-color: #e3e5b3;
+    background-color: #bfa8ff;
 }
 
 
@@ -589,6 +594,7 @@ svg.animate path {
 
 
 @media (min-width: 2048px) {
+    
     .hover-contact-icon {
         font-size: 2.5em;
     }
@@ -609,20 +615,23 @@ svg.animate path {
     body {
         font-size: 14px;
     }
+    #services{
+        width: 85%;
+    }
 }
 
 @media (min-width: 400px) and (max-width: 800px) {
     body {
-        font-size: 16px;
+        font-size: 14px;
     }
-
+   
     h1,
     h2 {
         font-weight: 500;
     }
 
     #nav {
-        margin-top: 30px;
+        margin-top: 20px;
         padding: 0 30px;
     }
 
@@ -652,6 +661,11 @@ svg.animate path {
         padding: 15px 0px;
         text-align: left;
     }
+
+    #services{
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -665,8 +679,8 @@ svg.animate path {
     }
 
     #nav {
-        margin-top: 20px;
-        padding: 0 20px;
+        margin-top: 15px;
+        padding: 0 15px;
     }
 
     .header-center {
@@ -702,6 +716,10 @@ svg.animate path {
 
     .hover-contact-icon {
         font-size: 1.2em;
+    }
+
+    #services{
+        width: 100%;
     }
 
 }
