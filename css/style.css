@@ -52,7 +52,7 @@ a {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     right: 0;
     top: 0;
     background-color: rgba(57, 73, 101, 0.95);
@@ -69,7 +69,7 @@ a {
     margin-top: 30px;
 }
 
-.overlay a {
+.overlay .nav-link {
     padding: 8px;
     text-decoration: none;
     font-size: 2em;
@@ -78,15 +78,17 @@ a {
     transition: .3s;
 }
 
-.overlay a::after {
+.overlay .nav-link::after {
     height: 0;
 }
 
-.overlay a:hover,
-.overlay a:focus {
+.overlay .nav-link:hover,
+.overlay .nav-link:focus {
     color: #f1f1f1;
 }
-
+.overlay .active{
+    color: #eaeef4;
+}
 /*--------/MOBILE-NAV--------*/
 
 /*--------HAMBURGER--------*/
@@ -149,7 +151,7 @@ a {
 
 .navbar-toggler {
     background-color: transparent;
-    z-index: 2;
+    z-index: 999;
     border: none;
     height: 50px;
     width: 50px;
@@ -252,7 +254,6 @@ a {
     left: 0;
     height: 100%;
 }
-
 /*--------/NAVBAR-------- */
 
 /*------------------------HOME PAGE------------------------*/
@@ -662,7 +663,8 @@ opacity: 1;
 
     #services {
         width: 100%;
-        margin-bottom: 2.5em;
+        margin-bottom: 3em;
+        padding: 1em .5em;
     }
 
     .order-but-wrap {
@@ -671,7 +673,7 @@ opacity: 1;
         left: 50%;
         transform: translateX(-50%);
         width: 95%;
-        z-index: 999;
+        z-index: 10;
         height: 5em;
     }
 
@@ -729,7 +731,8 @@ opacity: 1;
 
     #services {
         width: 100%;
-        margin-bottom: 2.5em;
+        margin-bottom: 3em;
+        padding: 1em .5em;
     }
 
     .order-but-wrap {
@@ -738,7 +741,7 @@ opacity: 1;
         left: 50%;
         transform: translateX(-50%);
         width: 95%;
-        z-index: 999;
+        z-index: 10;
         height: 5em;
     }
 }
