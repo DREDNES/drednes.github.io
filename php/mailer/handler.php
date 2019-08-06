@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . 'Validator.php';
-require_once __DIR__ . 'ContactMailer.php';
+require_once __DIR__ . '/Validator.php';
+require_once __DIR__ . '/ContactMailer.php';
 
 if (!Validator::isAjax() || !Validator::isPost()) {
 	echo 'Доступ запрещен!';

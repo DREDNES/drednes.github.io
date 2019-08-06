@@ -24,7 +24,7 @@ class ContactMailer
      * E-mail отправителя
      * @var string
      */
-    private static $emailFrom = 'send@yandex.ru';
+    private static $emailFrom = 'appoxius@gmail.com';
     /**
      * E-mail получателя
      * @var string
@@ -50,13 +50,13 @@ class ContactMailer
         // Настройки подключения
         $mailer->isSMTP();
         // Устанавливает хост почтового сервера (Mail.ru: smtp.mail.ru, Google: smtp.gmail.com)
-        $mailer->Host = ' smtp.yandex.ru';
+        $mailer->Host = ' smtp.gmail.com';
         // Включает SMTP-авторизацию
         $mailer->SMTPAuth = true;
         // Логин или E-mail целиком
         $mailer->Username = self::$emailFrom;
         // Пароль от почтового ящика
-        $mailer->Password = 'XXXXXXXX';
+        $mailer->Password = 'Avagyan07';
         // Протокол соединения
         $mailer->SMTPSecure = 'ssl';
         // Порт для исходящаей почты

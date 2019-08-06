@@ -62,6 +62,9 @@
   <!--Content-->
   <section>
     <div id="services">
+      <div class="order-but-wrap">
+          <button class="order-but" data-toggle="modal" data-target="#ContactForm">сделать заказ</button>
+      </div>
       <div class="grid">
         <div class="grid-sizer col-lg-4 col-md-6 col-sm-12"></div>
         <div class="item-wrap grid-item col-lg-4 col-md-6 col-sm-12">
@@ -71,13 +74,6 @@
             <div class="text-center price-container">
               <span>от 5000<span style="font-size: 80%">₽</span>*</span>
             </div>
-            <div class="success-container">
-              <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a"
-                  fill="transparent" />
-              </svg>
-            </div>
-            <button class="order-but" data-toggle="modal" data-target="#ContactForm">заказать</button>
           </div>
         </div>
         <div class="item-wrap grid-item col-lg-4 col-md-6 col-sm-12">
@@ -87,13 +83,6 @@
             <div class="text-center price-container">
               <span>от 15000<span style="font-size: 80%">₽</span>*</span>
             </div>
-            <div class="success-container">
-              <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a"
-                  fill="transparent" />
-              </svg>
-            </div>
-            <button class="order-but" data-toggle="modal" data-target="#ContactForm">заказать</button>
           </div>
         </div>
         <div class="item-wrap grid-item col-lg-4 col-md-6 col-sm-12">
@@ -103,13 +92,6 @@
             <div class="text-center price-container">
               <span>от 19000<span style="font-size: 80%">₽</span>*</span>
             </div>
-            <div class="success-container">
-              <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a"
-                  fill="transparent" />
-              </svg>
-            </div>
-            <button class="order-but" data-toggle="modal" data-target="#ContactForm">заказать</button>
           </div>
         </div>
         <div class="item-wrap grid-item col-lg-4 col-md-6 col-sm-12">
@@ -119,13 +101,6 @@
             <div class="text-center price-container">
               <span>от 15000<span style="font-size: 80%">₽</span>*</span>
             </div>
-            <div class="success-container">
-              <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a"
-                  fill="transparent" />
-              </svg>
-            </div>
-            <button class="order-but" data-toggle="modal" data-target="#ContactForm">заказать</button>
           </div>
         </div>
         <div class="item-wrap grid-item col-lg-4 col-md-6 col-sm-12">
@@ -135,13 +110,6 @@
             <div class="text-center price-container">
               <span>от 25000<span style="font-size: 80%">₽</span>*</span>
             </div>
-            <div class="success-container">
-              <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a"
-                  fill="transparent" />
-              </svg>
-            </div>
-            <button class="order-but" data-toggle="modal" data-target="#ContactForm">заказать</button>
           </div>
         </div>
         <div class="item-wrap grid-item col-lg-4 col-md-6 col-sm-12">
@@ -150,15 +118,8 @@
             <p>Подберем для Вас цветовую палитру, создадим логототип и макет для Вашего будущего сайта или приложения
             </p>
             <div class="text-center price-container">
-              <span>от 5000<span style="font-size: 80%">₽</span>*</span>
+              <span>от 2000<span style="font-size: 80%">₽</span>*</span>
             </div>
-            <div class="success-container">
-              <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a"
-                  fill="transparent" />
-              </svg>
-            </div>
-            <button class="order-but" data-toggle="modal" data-target="#ContactForm">заказать</button>
           </div>
         </div>
       </div>
@@ -175,7 +136,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="ContactFormLabel">Обратная связь</h5>
+          <h5 class="modal-title" id="ContactFormLabel">Форма заказа</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -196,13 +157,13 @@
             </div>
             <div class="form-group">
               <label for="message">Текст сообщения:</label>
-              <textarea id="message" class="form-control" required name="message" rows="4"></textarea>
+              <textarea id="message" class="form-control" required name="message" placeholder="Кратко опишите заказ и укажите, когда и как связаться с Вами" rows="4"></textarea>
             </div>
             <div class="form-group form-check">
               <input id="check" class="form-check-input" checked type="checkbox">
               <label class="form-check-label" for="check">Я добровольно отправляю свои данные</label>
             </div>
-            <button id="button" class="btn btn-success" type="submit">Отправить</button>
+            <button id="button" class="order-but" type="submit">отправить</button>
             <div class="result">
               <span id="answer"></span>
               <span id="loader" style="display:none"><img src="images/loader.gif" alt=""></span>
