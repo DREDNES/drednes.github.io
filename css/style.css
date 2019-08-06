@@ -159,9 +159,7 @@ a {
 }
 
 .navbar-toggler:focus {
-
     outline: none !important;
-
 }
 
 .navbar-brand {
@@ -574,6 +572,9 @@ opacity: 1;
     color: #424242;
     opacity: 0.5;
     transition: .2s;
+}
+.close:focus {
+    outline: none !important;
 }
 
 .close:hover {
