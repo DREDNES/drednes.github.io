@@ -661,6 +661,9 @@ input:focus, textarea:focus{
     padding: .5em;
     font-size: 2em;
 }
+#callme-wrap h3, #callme-wrap h4{
+    margin: 0 auto;
+}
 #callme-wrap{
     margin: 2em auto;
     text-align: center;
