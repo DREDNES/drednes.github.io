@@ -853,6 +853,7 @@ height: 100%;
     }
     #callme-wrap h3, #callme-wrap h4{
         font-size: 1.2em;
+        width: 90%;
     }
     #callme-wrap{
         width: 100%;
@@ -955,11 +956,11 @@ height: 100%;
     }
     #callme-wrap h3, #callme-wrap h4{
         font-size: 1.1em;
+        width: 90%;
     }
 
     .callme-but{
         margin: 0 0em;
-    
      }
 
     #message-wrap{
