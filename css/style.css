@@ -43,8 +43,8 @@ a {
 }
 input, textarea{
     transition: .2s;
-    outline: none;
-    border: none;
+    outline: none !important;
+    border: none !important;
 }
 input:focus, textarea:focus{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
@@ -670,7 +670,37 @@ input:focus, textarea:focus{
 
 #callme-wrap .d-flex {
     margin: 2em; 
+    padding: 0;
 }
+
+#callme-container input {
+    display: inline;
+    font-size: 1em; 
+    border-radius: .5em 0 0 .5em;
+    border: none;
+    padding: .5em;
+    outline: none;
+    height: 100%;
+}
+
+.callme-icon {
+    height: 100%;
+    padding: .5em;
+    display: inline-block;
+    background-color: #fff;
+    border-right: 2px solid #ABCDEF;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.callme-icon:last-child {
+    border-radius: 0 .5em .5em 0;
+    border-right: none;
+}
+#callme-container .active {
+    background-color: #ABCDEF;
+    color: #eaeef4;
+  }
 .callme-but{
     color: #ABCDEF;
     outline: none !important;
@@ -682,42 +712,11 @@ input:focus, textarea:focus{
     border: none;
     padding: .5em 1em;
     border-radius: .5em;
-    margin: 0 2em;
+    margin: 0 1em;
 }
 
 .callme-but:hover{
     background-color: rgb(15, 175, 15);
-}
-
-#callme-container {
-    text-align: center;
-    width: fit-content;
-}
-
-#callme-container input {
-    border-radius: .5em 0 0 .5em;
-    border: none;
-    padding: .5em;
-    outline: none;
-}
-
-.callme-icon {
-    padding: .5em;
-    font-size: 1.2em;
-    background-color: #fff;
-    height: 100%;
-    border-right: 2px solid #ABCDEF;
-    cursor: pointer;
-    transition: .2s;
-}
-#callme-container .active {
-  background-color: #ABCDEF;
-  color: #eaeef4;
-}
-
-#callme-container i:last-child {
-    border-radius: 0 .5em .5em 0;
-    border-right: none;
 }
 
 #message-wrap{
@@ -749,6 +748,7 @@ height: 100%;
 }
 #check-wrap input{
    width: fit-content;
+
 }
 
 
@@ -852,12 +852,16 @@ height: 100%;
         font-size: 2em;
     }
     #callme-wrap{
-        width: 95%;
+        width: 100%;
     }
-    #callme-wrap .d-flex {
-        margin: 2em auto;
-    }
+   #callme-container{
 
+   }
+    .callme-but{
+       margin: 0 .5em;
+       width: fit-content;
+    }
+    
     #message-wrap{
         width: 90%;
     }
@@ -946,11 +950,17 @@ height: 100%;
         font-size: 2em;
     }
     #callme-wrap{
-        width: 95%;
+        width: 100%;
     }
     #callme-wrap h3, #callme-wrap h4{
-        font-size: 0.2em;
+        font-size: 1.3em;
     }
+
+    .callme-but{
+        margin: 0 0em;
+    
+     }
+
     #message-wrap{
         width: 90%;
     }
