@@ -674,7 +674,7 @@ input:focus, textarea:focus{
 }
 
 #callme-container input {
-    display: inline;
+    display: inline-block;
     font-size: 1em; 
     border-radius: .5em 0 0 .5em;
     border: none;
@@ -851,12 +851,13 @@ height: 100%;
     #contact-icons i{
         font-size: 2em;
     }
+    #callme-wrap h3, #callme-wrap h4{
+        font-size: 1.2em;
+    }
     #callme-wrap{
         width: 100%;
     }
-   #callme-container{
 
-   }
     .callme-but{
        margin: 0 .5em;
        width: fit-content;
@@ -953,7 +954,7 @@ height: 100%;
         width: 100%;
     }
     #callme-wrap h3, #callme-wrap h4{
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .callme-but{
