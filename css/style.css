@@ -446,19 +446,19 @@ input:focus, textarea:focus{
     font-size: 1.2em;
 }
 
-.hover-contact-icon .icon-phone:hover {
+.hover-contact-icon:hover .icon-phone {
     color: #21e00f;
 }
 
-.hover-contact-icon .icon-paper-plane:hover {
+.hover-contact-icon:hover .icon-paper-plane {
     color: #0088cc;
 }
 
-.hover-contact-icon .icon-whatsapp:hover {
+.hover-contact-icon:hover .icon-whatsapp {
     color: #25d366;
 }
 
-.hover-contact-icon .icon-vkontakte:hover {
+.hover-contact-icon:hover .icon-vkontakte {
     color: #3376c9;
 }
 
