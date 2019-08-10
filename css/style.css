@@ -696,6 +696,7 @@ input:focus, textarea:focus{
     border-radius: .5em 0 0 .5em;
     border: none;
     padding: .5em;
+    outline: none;
 }
 
 .callme-icon {
@@ -841,10 +842,12 @@ height: 100%;
 
     #contacts-phone,  #contacts-email{
         text-align: center;
+        border: none;
+        font-size: 70%;
     }
     
     #contact-icons i{
-        font-size: 3em;
+        font-size: 2.5em;
     }
     #callme-wrap{
         width: 95%;
@@ -928,11 +931,13 @@ height: 100%;
         height: 5em;
     }
     #contacts-phone,  #contacts-email{
+        border: none;
         text-align: center;
+        font-size: 70%;
     }
     
     #contact-icons i{
-        font-size: 3em;
+        font-size: 2.5em;
     }
     #callme-wrap{
         width: 95%;
