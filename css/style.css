@@ -623,7 +623,7 @@ input:focus, textarea:focus{
 #contacts-phone {
     padding: .5em 1em;
     text-align: right;
-    border-right: 4px solid #ABCDEF;
+    border-right: 2px solid #ABCDEF;
 }
 
 #contacts-email {
@@ -637,24 +637,38 @@ input:focus, textarea:focus{
     padding: 2em auto;
     color: #ABCDEF;
 }
-#contact-icons i{
+
+.contact-icon-wrap a {
+    text-decoration: none;
+    color: #ABCDEF;
+    float: none;
+    display: inline-block;
+    cursor: pointer;
+    height: 100%;
+    margin: auto 0;
+}
+.contact-icon-wrap{
     transition: .3s;
+}
+.contact-icon-wrap:hover{
+    background-color: rgba(171, 205, 239, 0.5);
+    border-radius: 0.5em;
+    transition: .2s;
     cursor: pointer;
 }
-
-#contact-icons .icon-phone:hover {
+.contact-icon-wrap:hover .icon-phone {
     color: #21e00f;
 }
 
-#contact-icons .icon-paper-plane:hover {
+.contact-icon-wrap:hover .icon-paper-plane {
     color: #0088cc;
 }
 
-#contact-icons .icon-whatsapp:hover {
+.contact-icon-wrap:hover .icon-whatsapp {
     color: #25d366;
 }
 
-#contact-icons .icon-vkontakte:hover {
+.contact-icon-wrap:hover .icon-vkontakte {
     color: #3376c9;
 }
 #contact-icons i {
@@ -849,6 +863,7 @@ height: 100%;
         text-align: center;
         border: none;
         font-size: 2.5em;
+        padding: .3em 0;
     }
     
     #contact-icons i{
@@ -927,7 +942,7 @@ height: 100%;
     }
 
     .hover-contact-icon {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     #services {
@@ -949,6 +964,7 @@ height: 100%;
         border: none;
         text-align: center;
         font-size: 2.5em;
+        padding: .3em 0;
     }
     
     #contact-icons i{
