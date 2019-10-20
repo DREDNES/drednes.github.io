@@ -22,7 +22,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера
     $mail->Username   = 'avagyan.nn'; // Логин на почте
-    $mail->Password   = 'Drednes07'; // Пароль на почте
+    $mail->Password   = 'Avagyan07'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom($email, $name); // Адрес самой почты
