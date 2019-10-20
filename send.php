@@ -18,7 +18,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";                                          
     $mail->SMTPAuth   = true;
-
+    echo "here";
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера
     $mail->Username   = 'avagyan.nn'; // Логин на почте
