@@ -1,50 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Отправка файлов на почту</title>
-  <meta name="description" content="Отправка файлов на почту при помощи PHPMailer">
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#207292">
+  <meta name="msapplication-TileColor" content="#207292">
+  <meta name="theme-color" content="#207292">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animation.css">
+  <link rel="stylesheet" href="/css/fontello.css">
+
+  <title>Appoxius</title>
 </head>
 
 <body>
-<form enctype="multipart/form-data" method="post" id="form">
- <div class="flexblock">
-   <div class="group">
-     <div class="input-wrap ">
-       <input name="name" id="name" type="text" class="form-input">
-       <label for="name" class="form-label">Введите ваше имя</label>
-     </div>
-     <div class="input-wrap ">
-       <input name="email" id="email" type="mail" class="form-input">
-       <label for="email" class="form-label">Введите ваш Email</label>
-     </div>
-   </div>
-   <div class="area-wrap right">
-     <textarea name="text" class="form-text" id="text"></textarea>
-     <label for="text" class="area-label">Оставьте ваше сообщение</label>
-   </div>
-   <label for="myfile" class="file-label left">
-    <img src="img/upload.svg" alt="">
-    <p class="amount">Прикрепить файлы</p>
-   </label>
-   <input type="file" class="my" id="myfile" name="myfile[]" multiple>
+  <!--Navbar -->
+  <div id="mobileNav" class="overlay">
+    <div class="overlay-content">
+      <a class="nav-link active" href="index.html">Главная</a>
+      <a class="nav-link" href="services.html">Услуги</a>
+      <a class="nav-link" href="contacts.html">Контакты</a>
+    </div>
+  </div>
 
-   <button type="submit" class="button right">Отправить</button>
-   </div>
+  <nav id="nav" class="mb-1 navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">app<i class="icon-spin4 animate-spin"></i>xius</a>
+    <button class="navbar-toggler menu-wrapper" type="button">
+      <div class="hambergerIcon">
+      </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Услуги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--/Navbar-->
+  <!--.Content-->
+  <section>
+    <div class="header-center">
+      <div class="separator"></div>
+      <div class="text-center">
+        <h1>Интернет может быть красивым. </h1>
+        <h2>Мы работаем над этим.</h2>
+      </div>
+      <div class="separator"></div>
+    </div>
+    <!--Services blocks-->
+    <div id="services-block" class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-4 col-sm-12">
+        <a class="mainblock-link" href="services-pages/web.html">
+          <div class="container-main text-center">
+            <div class="row">
+              <h3 class="col-xl-9 col-lg-12">Разработка и поддержка веб-сайтов</h3>
+              <i class="col-xl-3 col-lg-12 mx-auto header-icons icon-desktop"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <a class="mainblock-link" href="services-pages/mobile.html">
+          <div class="container-main text-center">
+            <div class="row">
+              <h3 class="col-xl-9 col-lg-12">Разработка мобильных приложений</h3>
+              <i class="col-xl-3 col-lg-12 header-icons icon-mobile-1"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <a class="mainblock-link" href="services-pages/design.html">
+          <div class="container-main text-center">
+            <div class="row">
+              <h3 class="col-xl-9 col-lg-12">Создание уникального дизайна</h3>
+              <i class="col-xl-3 col-lg-12 header-icons icon-brush"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+    <!--/Services blocks-->
+    <!--Bottom part-->
+    <div class="main-footer row">
+      <div class="col-md-6 col-sm-12 left">
+        <ul>
+          <li><i class="icon-code-1"></i>Современная разработка</li>
+          <li><i class="icon-heart"></i>Привлекательный дизайн</li>
+          <li><i class="icon-gauge"></i>Быстродействие проекта</li>
+          <li><i class="icon-adult"></i>Индивидуальный подход</li>
+          <li><i class="icon-star"></i>Качественная работа</li>
+        </ul>
+      </div>
+      <!--Contacts-->
+      <div class="col-xl-4 col-md-6 col-sm-12 d-flex align-items-center row right">
+        <div class="col-3 start-anim switch-block">
+          <div class="hover-contact-icon">
+            <i class="main-footer-icons icon-phone" onclick="CollapseContactOpen('icon-phone')"></i>
+          </div>
+        </div>
+        <div class="col-3 start-anim switch-block">
+          <div class="hover-contact-icon">
+            <i class="main-footer-icons icon-paper-plane" onclick="CollapseContactOpen('icon-paper-plane')"></i>
+          </div>
+        </div>
+        <div class="col-3 start-anim switch-block">
+          <div class="hover-contact-icon">
+            <i class="main-footer-icons icon-whatsapp" onclick="CollapseContactOpen('icon-whatsapp')"></i>
+          </div>
+        </div>
+        <div class="col-3 start-anim switch-block">
+          <div class="hover-contact-icon">
+            <i class="main-footer-icons icon-vkontakte" onclick="CollapseContactOpen('icon-vkontakte')"></i>
+          </div>
+        </div>
+        <div id="collapsed-contact-wrap" class="col-12 switch-block">
+          <div id="contact" class="row align-items-center">
+          </div>
+        </div>
+      </div>
+      <!--/Contacts-->
+    </div>
+    <!--/Bottom part-->
+    <!--/Content-->
+  </section>
 
-   <div class="loading">
-    <p>Подождите</p>
-   </div>
-</form>
-
-<div class="msg"></div>
-
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src='js/script.js' type="text/javascript"></script>
 </body>
 
 </html>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/TweenMax.min.js"></script>
-<script src="js/js.js"></script>
-<link rel="stylesheet" href="css/css.css" />
