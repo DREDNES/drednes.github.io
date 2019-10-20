@@ -13,7 +13,7 @@ $text = $_POST['text'];
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
 $mail = new PHPMailer\PHPMailer\PHPMailer();
-try {
+
     $msg = "ok";
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";                                          
@@ -61,9 +61,6 @@ if ($mail->send()) {
 echo "Сообщение не было отправлено. Неверно указаны настройки вашей почты";
 }
 
-} catch (Exception $e) {
-    echo "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
-}
 
 } else {
     echo 'mailerror';
