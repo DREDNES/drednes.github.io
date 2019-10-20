@@ -20,15 +20,15 @@ try {
     $mail->SMTPAuth   = true;
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера
-    $mail->Username   = 'ava.narek'; // Логин на почте
+    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера
+    $mail->Username   = 'avagyan.nn'; // Логин на почте
     $mail->Password   = 'Drednes07'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('ava.narek@gmail.com', 'Narek'); // Адрес самой почты
+    $mail->setFrom($email, $name); // Адрес самой почты
 
     // Получатель письма
-    $mail->addAddress('avagyan.nn@yandex.ru');     
+    $mail->addAddress('ava.narek@gmail.com');     
 
     // Прикрипление файлов к письму
 if (!empty($_FILES['myfile']['name'][0])) {
