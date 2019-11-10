@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./src/styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./src/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="slider-wrap">
+      <div class="slider">
+        <div class="slider-item-container">
+          <div class="slider-item-content">
+            <h2>Chat with live video streams</h2>
+            <div class="feauters">
+              <h3>Features</h3>
+              <ul>
+                <li>2 default chatrooms</li>
+                <li>possibility to create more chatrooms</li>
+                <li>more than 2 users in the room</li>
+                <li>video live stream for all users in chat</li>
+              </ul>
+            </div>
+            <div class="instruments">
+              <div class="instrument-wrap">
+                <p>Backend</p>
+                <span>Node.js</span>
+              </div>
+              <div class="instrument-wrap">
+                <p>Frontend</p>
+                <span>React.js</span>
+              </div>
+              <div class="instrument-wrap">
+                <p>WebSockets</p>
+                <span>Socket.io</span>
+              </div>
+              <div class="instrument-wrap">
+                <p>WebRTC</p>
+                <span>simple-peer.js</span>
+              </div>
+            </div>
+            <div class="links">
+              <a href="https://github.com/DREDNES/WebSocket-chat-React-Socket.io">source</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-item-container">
+          <div class="slider-item-content">
+            <h2>Take selfie with web camera</h2>
+            <div class="feauters">
+              <h3>Features</h3>
+              <ul>
+                <li>save all selfies and then choose the best</li>
+                <li>delete selfie</li>
+                <li>save selfie to hardrive</li>
+              </ul>
+            </div>
+            <div class="instruments">
+              <div class="instrument-wrap">
+                <p>Frontend</p>
+                <span>React.js</span>
+              </div>
+            </div>
+            <div class="links">
+              <a href="https://github.com/DREDNES/webcam-selfie-react">source</a>
+              <a href="https://drednes.github.io/webcam-selfie/">demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-item-container">
+          <div class="slider-item-content">
+            <h2>String generator</h2>
+            <div class="feauters">
+              <h3>Features</h3>
+              <ul>
+                <li>opens brackets and generates string</li>
+                <li>counts all posible combinations of given string</li>
+                <li>writes result to database</li>
+                <li>nested brackets can be infinite</li>
+              </ul>
+            </div>
+            <div class="instruments">
+              <div class="instrument-wrap">
+                <p>Backend</p>
+                <span>php</span>
+              </div>
+              <div class="instrument-wrap">
+                <p>Database</p>
+                <span>MySQL</span>
+              </div>
+            </div>
+            <div class="links">
+              <a href="https://github.com/DREDNES/random-string-generator">source</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./src/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.slider').slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      });
+    </script>
+  </body>
+</html>
