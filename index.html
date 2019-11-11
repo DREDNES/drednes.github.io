@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <meta name="msapplication-TileColor" content="#9e4295" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="apple-touch-icon" sizes="180x180" href="./src/favico/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./src/favico/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./src/favico/favicon-16x16.png" />
+
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="./src/styles/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./src/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./src/js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./src/js/slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="./src/styles/style.css" />
+
     <title>GitHub navigator</title>
   </head>
   <body>
@@ -118,63 +121,48 @@
             </div>
           </div>
         </div>
+        <div class="slider-item-container">
+          <div class="slider-item-content">
+            <h2>Website for appoxius</h2>
+            <div class="feauters">
+              <h3>Features</h3>
+              <ul>
+                <li>Adaptive</li>
+              </ul>
+            </div>
+            <div class="instruments">
+              <div class="instrument-wrap">
+                <p>Frontend</p>
+                <span>Bootstrap 4</span>
+              </div>
+              <div class="instrument-wrap">
+                <p>Frontend</p>
+                <span>Animation.css</span>
+              </div>
+              <div class="instrument-wrap">
+                <p>Frontend</p>
+                <span>Fontello.css</span>
+              </div>
+              <div class="instrument-wrap">
+                <p>Frontend</p>
+                <span>Grid Masonry</span>
+              </div>
+            </div>
+            <div class="links">
+              <a href="https://drednes.github.io/appoxius/">demo</a>
+            </div>
+            <div class="icons">
+              <img src="./src/icons/html.svg" alt="html" height="30" />
+              <img src="./src/icons/css.svg" alt="css" height="30" />
+              <img src="./src/icons/bootstrap.svg" alt="bootstrap" height="30" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script type="text/javascript" src="./src/slick/slick.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.slider').on('init', function(event, slick, direction) {
-          const width = window.innerWidth;
-          const count = $('.slider .slick-slide').length;
-          if ((width >= 1200 && count <= 3) || (width >= 1600 && count <= 4)) {
-            $('.slick-dots').hide();
-          }
-        });
-        const sliderInit = () =>
-          $('.slider').slick({
-            dots: true,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            responsive: [
-              {
-                breakpoint: 1600,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3
-                }
-              },
-              {
-                breakpoint: 1200,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2
-                }
-              },
-              {
-                breakpoint: 600,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              }
-            ]
-          });
-        $('.slider-wrap').fadeOut(0);
-        const typed = new Typed('#typed', {
-          strings: ["Hi! I'm Narek Avagyan and here you can find projects from my GitHub!"],
-          typeSpeed: 30,
-          onComplete: () => {
-            setTimeout(() => {
-              $('.slider-wrap').fadeIn(1000);
-              sliderInit();
-            }, 500);
-          }
-        });
-      });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./src/js/slick/slick.min.js"></script>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>
