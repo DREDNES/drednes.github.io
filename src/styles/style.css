@@ -4,7 +4,6 @@ html {
 }
 
 body {
-  max-width: 1800px;
   margin: 0 auto;
   height: 100vh;
   display: flex;
@@ -43,7 +42,8 @@ h1 {
 }
 
 .slider-item-content h2 {
-  font-size: 2em;
+  font-size: 1.7em;
+  font-weight: 700;
   margin-bottom: 0.5em;
 }
 
