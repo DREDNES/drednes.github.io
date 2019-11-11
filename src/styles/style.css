@@ -91,8 +91,18 @@ h1 {
   margin: 0;
 }
 
+.multiple-instruments {
+  display: flex;
+  flex-direction: column;
+}
+.multiple-instruments span {
+  margin: 0.1em 0;
+}
+
 .instrument-wrap p {
   padding: 0.3em;
+  height: fit-content;
+  margin: auto 0;
 }
 
 .instrument-wrap span {

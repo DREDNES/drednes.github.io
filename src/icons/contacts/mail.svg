@@ -30,7 +30,7 @@
                 <rect id="Rectangle" fill="#D8D8D8" transform="translate(400.500000, 180.000000) rotate(-270.000000) translate(-400.500000, -180.000000) " x="394" y="180" width="13" height="1" rx="0.5"></rect>
                 <rect id="Rectangle" fill="#D8D8D8" x="243" y="249" width="14" height="1" rx="0.5"></rect>
             </g>
-            <circle id="Oval" fill="#94FF93" cx="381.5" cy="271.5" r="85.5"></circle>
+            <circle id="Oval" fill="#77BB76" cx="381.5" cy="271.5" r="85.5"></circle>
             <rect id="Rectangle" fill="#D8D8D8" x="348" y="271.403845" width="61" height="1" rx="0.5"></rect>
             <rect id="Rectangle" fill="#D8D8D8" transform="translate(399.000000, 262.140865) rotate(35.000000) translate(-399.000000, -262.140865) " x="383" y="262.140865" width="32" height="1" rx="0.5"></rect>
             <rect id="Rectangle" fill="#D8D8D8" transform="translate(398.000000, 281.403845) scale(1, -1) rotate(35.000000) translate(-398.000000, -281.403845) " x="382" y="281.403845" width="32" height="1" rx="0.5"></rect>
