@@ -177,16 +177,17 @@ h1 {
 
 .sbutton:active,
 .sbutton:focus,
-.sbutton:hover {
+.sbutton:hover,
+.mainsbutton:active,
+.mainsbutton:focus,
+.mainsbutton:hover {
   transform: scale(1.2);
 }
 
 .sbutton:not(:last-child) {
-  margin: 30px auto 0;
-}
-.sbuttons:hover .sbutton:not(:last-child) {
   margin: 20px auto 0;
 }
+
 .sbutton:nth-last-child(1) {
   -webkit-transition-delay: 25ms;
   transition-delay: 25ms;
