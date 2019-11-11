@@ -52,3 +52,11 @@ const sliderInit = () =>
       }
     ]
   });
+
+function contactsToogle() {
+  $('.sbutton')
+    .toArray()
+    .forEach(element => {
+      element.classList.toggle('hidden');
+    });
+}
