@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="458px" height="357px" viewBox="0 0 458 357" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="465px" height="367px" viewBox="0 0 465 367" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 56 (81588) - https://sketch.com -->
     <title>Group 2</title>
     <desc>Created with Sketch.</desc>
@@ -11,30 +11,32 @@
                 <rect id="Rectangle" stroke-width="7" transform="translate(106.698689, 203.072661) rotate(54.000000) translate(-106.698689, -203.072661) " x="106.698689" y="99.0726609" width="1" height="208" rx="0.5"></rect>
                 <rect id="Rectangle" stroke-width="7" fill="#D8D8D8" transform="translate(319.000000, 201.500000) scale(-1, 1) rotate(54.000000) translate(-319.000000, -201.500000) " x="319.5" y="98.5" width="1" height="206" rx="0.5"></rect>
                 <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="79" y="256" width="141" height="1" rx="0.5"></rect>
-                <path d="M355.5,102 L452.5,102 C451.671573,102 451,101.328427 451,100.5 C451,99.6715729 451.671573,99 452.5,99 L355.5,99 C356.328427,99 357,99.6715729 357,100.5 C357,101.328427 356.328427,102 355.5,102 Z" id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(404.000000, 100.500000) rotate(-270.000000) translate(-404.000000, -100.500000) "></path>
+                <path d="M353.5,102 L454.5,102 C452.567003,102 451,100.432997 451,98.5 C451,96.5670034 452.567003,95 454.5,95 L353.5,95 C355.432997,95 357,96.5670034 357,98.5 C357,100.432997 355.432997,102 353.5,102 Z" id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(404.000000, 98.500000) rotate(-270.000000) translate(-404.000000, -98.500000) "></path>
                 <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="279" y="249" width="13" height="1" rx="0.5"></rect>
                 <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="315" y="249" width="13" height="1" rx="0.5"></rect>
                 <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(400.000000, 216.000000) rotate(-270.000000) translate(-400.000000, -216.000000) " x="393.5" y="217.5" width="13" height="1" rx="0.5"></rect>
                 <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(400.000000, 178.500000) rotate(-270.000000) translate(-400.000000, -178.500000) " x="394" y="180" width="12" height="1" rx="0.5"></rect>
                 <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="243" y="256" width="13" height="1" rx="0.5"></rect>
             </g>
-            <g id="Group" transform="translate(28.000000, 43.000000)">
+            <g id="Group" transform="translate(35.000000, 53.000000)">
                 <rect id="Rectangle" stroke-width="10" fill="#FFEA96" x="5" y="5" width="415" height="266" rx="30"></rect>
                 <path d="M212.5,6.82672052 L404.255975,131.355307 C409.582592,134.814475 411.096459,141.93676 407.637291,147.263377 C405.516371,150.529287 401.886757,152.5 397.992598,152.5 L27.0074019,152.5 C20.6561273,152.5 15.5074019,147.351275 15.5074019,141 C15.5074019,137.105841 17.4781147,133.476227 20.7440247,131.355307 L212.5,6.82672052 Z" id="Triangle" stroke-width="7" fill="#FFEA96" transform="translate(212.500000, 80.000000) scale(1, -1) translate(-212.500000, -80.000000) "></path>
                 <rect id="Rectangle" stroke-width="7" transform="translate(106.698689, 203.072661) rotate(54.000000) translate(-106.698689, -203.072661) " x="106.698689" y="99.0726609" width="1" height="208" rx="0.5"></rect>
                 <rect id="Rectangle" stroke-width="7" fill="#D8D8D8" transform="translate(319.000000, 201.500000) scale(-1, 1) rotate(54.000000) translate(-319.000000, -201.500000) " x="319.5" y="98.5" width="1" height="206" rx="0.5"></rect>
-                <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="79" y="256" width="141" height="1" rx="0.5"></rect>
-                <path d="M355.5,102 L452.5,102 C451.671573,102 451,101.328427 451,100.5 C451,99.6715729 451.671573,99 452.5,99 L355.5,99 C356.328427,99 357,99.6715729 357,100.5 C357,101.328427 356.328427,102 355.5,102 Z" id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(404.000000, 100.500000) rotate(-270.000000) translate(-404.000000, -100.500000) "></path>
+                <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="79" y="250" width="141" height="1" rx="0.5"></rect>
                 <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="279" y="249" width="13" height="1" rx="0.5"></rect>
                 <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="315" y="249" width="13" height="1" rx="0.5"></rect>
                 <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(400.000000, 216.000000) rotate(-270.000000) translate(-400.000000, -216.000000) " x="393.5" y="217.5" width="13" height="1" rx="0.5"></rect>
                 <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(400.000000, 178.500000) rotate(-270.000000) translate(-400.000000, -178.500000) " x="394" y="180" width="12" height="1" rx="0.5"></rect>
-                <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="243" y="256" width="13" height="1" rx="0.5"></rect>
+                <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="243" y="250" width="13" height="1" rx="0.5"></rect>
+                <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(400.500000, 141.500000) rotate(90.000000) translate(-400.500000, -141.500000) " x="394" y="145" width="13" height="1" rx="0.5"></rect>
+                <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(400.500000, 106.500000) rotate(90.000000) translate(-400.500000, -106.500000) " x="394" y="110" width="13" height="1" rx="0.5"></rect>
+                <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(400.500000, 71.500000) rotate(90.000000) translate(-400.500000, -71.500000) " x="394" y="75" width="13" height="1" rx="0.5"></rect>
             </g>
-            <circle id="Oval" stroke-width="10" fill="#77BB76" cx="367.5" cy="266.5" r="85.5"></circle>
-            <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="334" y="266.403845" width="61" height="1" rx="0.5"></rect>
-            <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(385.000000, 257.140865) rotate(35.000000) translate(-385.000000, -257.140865) " x="369" y="257.140865" width="32" height="1" rx="0.5"></rect>
-            <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(384.000000, 276.403845) scale(1, -1) rotate(35.000000) translate(-384.000000, -276.403845) " x="368" y="276.403845" width="32" height="1" rx="0.5"></rect>
+            <circle id="Oval" stroke-width="10" fill="#77BB76" cx="374.5" cy="276.5" r="85.5"></circle>
+            <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" x="341" y="276.403845" width="61" height="1" rx="0.5"></rect>
+            <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(392.000000, 267.140865) rotate(35.000000) translate(-392.000000, -267.140865) " x="376" y="267.140865" width="32" height="1" rx="0.5"></rect>
+            <rect id="Rectangle" stroke-width="10" fill="#D8D8D8" transform="translate(391.000000, 286.403845) scale(1, -1) rotate(35.000000) translate(-391.000000, -286.403845) " x="375" y="286.403845" width="32" height="1" rx="0.5"></rect>
         </g>
     </g>
 </svg>
