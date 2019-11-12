@@ -1,12 +1,4 @@
 $(document).ready(function() {
-  $('.slider').on('init', () => {
-    const width = window.innerWidth;
-    const count = $('.slider .slick-slide').length;
-    if (width >= 2000 && count <= 4) {
-      $('.slick-dots').hide();
-    }
-  });
-
   $('.slider-wrap').fadeOut(0);
   new Typed('#typed', {
     strings: ["Hi! I'm Narek Avagyan and here you can find projects from my GitHub!"],
@@ -54,9 +46,11 @@ const sliderInit = () =>
   });
 
 function contactsToogle() {
-  $('.sbutton')
-    .toArray()
-    .forEach(element => {
-      element.classList.toggle('hidden');
-    });
+  const buts = $('.sbutton').toArray();
+  let i = 0;
+  const interval = setInterval(() => {
+    buts[i].classList.toggle('hidden');
+    i++;
+    if (i === buts.length) clearInterval(interval);
+  }, 75);
 }
