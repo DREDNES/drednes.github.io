@@ -46,11 +46,12 @@ const sliderInit = () =>
   });
 
 function contactsToogle() {
-  const buts = $('.sbutton').toArray();
-  let i = 0;
-  const interval = setInterval(() => {
-    buts[i].classList.toggle('hidden');
-    i++;
-    if (i === buts.length) clearInterval(interval);
-  }, 75);
+  let buts = $('.sbutton');
+  if (buts.first().hasClass('hidden')) buts = $(buts.get().reverse());
+  let timer = 0;
+  buts.each((i, element) => {
+    setTimeout(() => {
+      $(element).toggleClass('hidden');
+    }, (timer += 75));
+  });
 }
