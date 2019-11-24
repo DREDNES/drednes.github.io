@@ -18,6 +18,32 @@ h1 {
   text-align: center;
 }
 
+#typed a {
+  text-decoration: none;
+  transition: 0.2s;
+  color: #2c4ba1;
+}
+#typed a:hover {
+  color: #7046a7;
+}
+
+#typed a::before {
+  content: '';
+  background-image: url('./../icons/Octocat.png');
+  background-position: 0 30%;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  position: absolute;
+  height: 90px;
+  top: -90px;
+  left: 0;
+  transition: transform 0.3s;
+}
+#typed a:hover::before {
+  width: 100vw;
+  transform: translateY(90px);
+}
+
 .slider-wrap {
   width: 85%;
 }
@@ -28,7 +54,7 @@ h1 {
   outline: none;
 }
 .slider-item-content {
-  margin: 0.5em;
+  margin: 0.5em auto;
   padding: 1em 1em 1.5em 1em;
   background-image: linear-gradient(120deg, rgb(253, 251, 251, 0.8) 0%, rgb(235, 237, 238, 0.8) 100%);
   border-radius: 25px;

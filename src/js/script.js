@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('.slider-wrap').fadeOut(0);
   new Typed('#typed', {
-    strings: ["Hi! I'm Narek Avagyan and here you can find projects from my GitHub!"],
+    strings: ["Hi! I'm Narek Avagyan and here you can find projects from <a href='https://github.com/DREDNES'>my GitHub</a>!"],
     typeSpeed: 30,
     onComplete: () => {
       setTimeout(() => {
