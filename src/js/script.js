@@ -1,3 +1,34 @@
+const sliderSettings = {
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 2000,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+};
+
 $(document).ready(function() {
   $('.slider-wrap').fadeOut(0);
   new Typed('#typed', {
@@ -7,43 +38,11 @@ $(document).ready(function() {
       setTimeout(() => {
         if (window.innerHeight < 700) document.body.style.height = 'fit-content';
         $('.slider-wrap').fadeIn(800);
-        sliderInit();
+        $('.slider').slick(sliderSettings);
       }, 500);
     }
   });
 });
-
-const sliderInit = () =>
-  $('.slider').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    responsive: [
-      {
-        breakpoint: 2000,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
-        }
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
 
 function contactsToogle() {
   let buts = $('.sbutton');

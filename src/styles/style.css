@@ -48,18 +48,14 @@ h1 {
   width: 85%;
 }
 
-.slider-item-container {
-  width: 100%;
-  margin: 1em auto;
-  outline: none;
-}
 .slider-item-content {
-  margin: 0.5em auto;
+  margin: 0.5em 1em;
   padding: 1em 1em 1.5em 1em;
   background-image: linear-gradient(120deg, rgb(253, 251, 251, 0.8) 0%, rgb(235, 237, 238, 0.8) 100%);
   border-radius: 25px;
   width: fit-content;
   transition: 0.3s;
+  outline: none;
 }
 .slider-item-content:hover {
   transform: scale(1.01);
@@ -71,6 +67,10 @@ h1 {
   font-weight: 700;
   margin-bottom: 0.5em;
   color: #3d4a57;
+}
+
+.slick-arrow {
+  transform: scale(1.3);
 }
 
 .feauters {
@@ -250,13 +250,14 @@ h1 {
 [tooltip]:before {
   font-weight: 600;
   border-radius: 2px;
-  background-color: #585858;
+  background-color: #3d4a57;
   color: #fff;
+  border-radius: 0.5em;
   content: attr(tooltip);
-  font-size: 12px;
+  font-size: 0.8em;
   visibility: hidden;
   opacity: 0;
-  padding: 5px 7px;
+  padding: 9px 12px;
   margin-left: 10px;
   position: absolute;
   right: 110%;
@@ -269,4 +270,17 @@ h1 {
 [tooltip]:hover:after {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .slider-item-content:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  [tooltip]:not(:last-child):before,
+  [tooltip]:not(:last-child):after {
+    visibility: visible;
+    opacity: 1;
+  }
 }
