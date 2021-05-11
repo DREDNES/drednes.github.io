@@ -24,16 +24,16 @@ self.__precacheManifest = [
     "url": "./static/media/fa-solid-900.7fb1cdd9.eot"
   },
   {
+    "revision": "2aa6edf8f296a43b32df35f330b7c81c",
+    "url": "./static/media/fa-solid-900.2aa6edf8.ttf"
+  },
+  {
     "revision": "f6121be597a72928f54e7ab5b95512a1",
     "url": "./static/media/fa-solid-900.f6121be5.woff2"
   },
   {
     "revision": "93f284548b42ab76fe3fd03a9d3a2180",
     "url": "./static/media/fa-solid-900.93f28454.woff"
-  },
-  {
-    "revision": "2aa6edf8f296a43b32df35f330b7c81c",
-    "url": "./static/media/fa-solid-900.2aa6edf8.ttf"
   },
   {
     "revision": "7a5de9b08012e4da40504f2cf126a351",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "./static/media/more.bb158ab6.svg"
   },
   {
-    "revision": "eeacf228c81518e2b39110b56de33344",
+    "revision": "f8cd74f685b33b1386e985ece51bb005",
     "url": "./index.html"
   }
 ];
