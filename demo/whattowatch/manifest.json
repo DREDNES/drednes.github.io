@@ -4,7 +4,7 @@
   "name": "Что посмотреть?",
   "scope": "/",
   "display": "standalone",
-  "start_url": "https://obozhe.github.io/demo/whattowatch/",
+  "start_url": "/",
   "short_name": "WTW?",
   "description": "Лучшее приложение для поиска фильма на вечер!",
   "orientation": "any",
