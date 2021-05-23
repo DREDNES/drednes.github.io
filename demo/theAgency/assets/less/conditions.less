@@ -1,0 +1,42 @@
+.conditions {
+  padding: 35px 20px;
+  color: @smoky-white;
+  background: linear-gradient(90deg, rgb(58, 15, 15) 0%, #000 20%, #000 80%, rgb(58, 15, 15) 100%);
+
+  .conditions_proposal {
+    max-width: 1500px;
+
+    h2 {
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 20px;
+      color: @color-primary;
+    }
+  }
+
+  .conditions_needed {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .masonry_grid {
+    margin: 0 auto;
+
+    .grid-item {
+      width: 200px;
+      padding: 10px;
+      height: fit-content;
+
+      .grid-content {
+        padding: 5px 10px;
+        color: #000;
+        border-radius: 3px;
+        background-color: @smoky-white;
+      }
+    }
+  }
+
+  .masonry-grid_column {
+    background-clip: padding-box;
+  }
+}
