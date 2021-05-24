@@ -1,3 +1,10 @@
+@media (max-width: 450px) {
+  .masonry_grid {
+    .grid-item {
+      width: 350px !important;
+    }
+  }
+}
 @media (max-width: 767px) {
   .navbar-collapse {
     border-top: none;
@@ -67,6 +74,14 @@
 
     .main-img {
       display: none;
+    }
+  }
+
+  .contact {
+    .contact-form {
+      grid-template-columns: 1fr !important;
+      grid-gap: 0 !important;
+      grid-template-rows: auto auto;
     }
   }
 }

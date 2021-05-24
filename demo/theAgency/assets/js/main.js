@@ -1,9 +1,16 @@
 AOS.init();
 
 $(document).ready(function () {
+  var columnWidth;
+  if (window.innerWidth <= 450) {
+    columnWidth = 350;
+  } else {
+    columnWidth = 200;
+  }
+
   var $grid = $('.masonry_grid').masonry({
     itemSelector: '.grid-item',
-    columnWidth: 200,
+    columnWidth,
     fitWidth: true,
   });
 
