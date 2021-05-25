@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 .contact {
-  background-image: url('../images/contact-bg.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 30px 25px;
+  background-image: url('../images/services.jpg');
+  background-image: linear-gradient(to bottom, rgba(29, 8, 8, 0.4), rgba(66, 43, 60, 0.73)),
+    url('../images/services.jpg');
+  background-size: 250px;
+  padding: 45px 25px;
 
   .contact-form-wrapper {
     max-width: 900px;
@@ -12,14 +11,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(@color-dark-red, 0.3);
+    background-color: rgba(@color-primary, 0.3);
     padding: 30px 20px 10px;
     border-radius: 20px;
+    border: 2px solid @color-dark-red;
 
     .contact-title {
       text-align: center;
-      color: @color-primary;
+      color: @color-dark-red;
       margin-bottom: 10px;
+      background-color: rgba(white, 0.6);
+      border: 2px solid @color-dark-red;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: 600;
     }
 
     .contact-form {
@@ -27,6 +32,7 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
       margin-bottom: 10px;
+      font-weight: 800;
 
       .input {
         display: block;
@@ -34,11 +40,11 @@
         margin: 10px 0;
         padding: 10px;
         border-radius: 10px;
-        border: 2px solid @color-primary;
+        border: 2px solid @color-dark-red;
         transition: 0.3s border-color;
 
         &:hover {
-          border: 2px solid @color-dark-red;
+          border: 2px solid @color-primary;
         }
 
         &.textarea {
@@ -64,6 +70,8 @@
       color: @color-dark-gray;
       width: 200px;
       margin: 0 auto 10px;
+      border: 2px solid @color-dark-red;
+      height: 50px;
     }
   }
 }
