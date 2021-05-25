@@ -1,7 +1,7 @@
 .conditions {
   padding: 35px 20px;
   color: @smoky-white;
-  background: linear-gradient(90deg, rgb(58, 15, 15) 0%, #000 20%, #000 80%, rgb(58, 15, 15) 100%);
+  background: linear-gradient(90deg, rgb(29, 8, 8) 0%, #000 20%, #000 80%, rgb(29, 8, 8) 100%);
 
   .conditions_proposal {
     max-width: 1500px;
@@ -24,7 +24,7 @@
     margin: 0 auto;
 
     .grid-item {
-      width: 200px;
+      width: 250px;
       padding: 10px;
       height: fit-content;
 
@@ -32,7 +32,17 @@
         padding: 5px 10px;
         color: #000;
         border-radius: 3px;
-        background-color: @smoky-white;
+        background-color: @color-dark-gray;
+
+        color: @color-primary;
+        display: grid;
+        grid-template-columns: 25px auto;
+        grid-gap: 10px;
+        align-items: center;
+
+        i {
+          margin: 0 auto;
+        }
       }
     }
   }

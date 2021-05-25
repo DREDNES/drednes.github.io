@@ -1,7 +1,17 @@
-@media (max-width: 450px) {
+@media (max-width: 540px) {
   .masonry_grid {
     .grid-item {
       width: 350px !important;
+
+      .grid-content {
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          @color-dark-gray 40%,
+          @color-dark-gray 60%,
+          transparent 100%
+        ) !important;
+      }
     }
   }
 }
@@ -78,6 +88,10 @@
   }
 
   .contact {
+    .submit-btn {
+      width: 100% !important;
+    }
+
     .contact-form {
       grid-template-columns: 1fr !important;
       grid-gap: 0 !important;
@@ -89,6 +103,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .about {
     justify-content: center;
+
     .main-img {
       display: none;
     }
